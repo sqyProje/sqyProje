@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>留言板的实现1</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			textarea,input{
+				border: none;
+				outline: none;
+			}
+			i,em{
+				font-style: normal;
+			}
+			i{
+				float: right;
+				margin-right: 15px;
+				display: inline-block;
+				width: 35px;
+				height: 35px;
+				border-radius: 50%;
+				background: rgba(0,0,0,.5);
+				cursor:pointer;
+				font-size: 9px;
+				text-indent: 12px;
+				color:white;
+			}
+			
+			ul{
+				list-style: none;
+			}
+			:root{
+				background: url(img/2.jpg) no-repeat;
+			}
+			body{
+				position: relative;
+			}
+			.board{
+				position: fixed;
+				left: 50%;
+				top: 50%;
+				margin-left: -200px;
+				margin-top: -200px;
+				width: 400px;
+				height: 400px;
+				display: none;
+				/*transform: all 0.5S;*/
+			}
+			.top{
+				height: 100px;
+				background: linear-gradient(to right bottom,rgba(255,255,255,0.8),rgba(254,84,64,.8),rgba(255,124,135,.8),rgba(255,252,255,.8));
+				/*display: flex;
+				justify-content: center;
+				align-items: center;*/
+				border-top-left-radius: 15px;
+				border-top-right-radius: 15px;
+			}
+			.top p{
+				display: block;
+				color: #FFF;
+				font-weight: bold;
+				font-size: 35px;
+				text-shadow: 3px 5px 1px #990099;
+				margin: 10px 20px;			
+			}
+			
+			.title{
+				font-size:30px ;
+				font-weight: bold;
+				color: cyan;
+				text-shadow: 2px 2px 1px #990099;
+				margin: 10px 20px;
+			}
+			
+			.tx{
+				width: 200px;
+				height: 30px;
+				border-radius: 15px;
+				font-size: 24px;
+				text-indent: 20px;
+				background: linear-gradient(to right,rgba(255,255,255,.4),rgba(0,0,0,.5),rgba(255,255,255,.4));
+			}			
+			.bot{
+				height: 300px;
+				background: #909;
+				display: flex;
+				justify-content: center;
+				align-items:center;
+				background: -webkit-radial-gradient(50%,rgba(255,255,255,.4),rgba(0,0,0,.5),rgba(255,255,255,.4),rgba(0,0,0,.5),rgba(255,255,255,.4),rgba(0,0,0,.8));
+				
+				border-bottom-left-radius:15px;
+				border-bottom-right-radius:15px;
+				
+			}
+			.cont{
+				display: block;
+				width: 300px;
+				height: 250px;
+				resize: none;
+				background: linear-gradient(to right,rgba(254,84,64,.4),rgba(254,188,135,.5),rgba(255,255,255,.4));
+				font-size: 20px;
+				border-radius: 15px;
+				text-indent: 24px;
+			}
+			
+			.btn{
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				margin-left: 20px;
+				box-shadow: 0 0 15px 2px #000;
+				color: #000;
+				text-shadow: 1px 1px 2px #903;
+				background: rgba(254,84,64,.5);
+				cursor: pointer;
+			}
+			
+			.blog{
+				margin-top:50px;
+				display: flex;
+				justify-content: center;
+			}
+			.list li{
+				width: 650px;
+				/*height: 35px;*/
+				background: linear-gradient(to right,rgba(0,0,0,.5),rgba(255,255,255,.8),rgba(0,0,0,.7));
+				line-height: 35px;
+				border-radius: 15px;
+				text-indent: 20px;
+				margin-bottom: 15px;
+			}
+			.m1{
+				padding-right: 15px;
+				border-right: 1px solid rgb(190,190,190);
+				color: #fff;
+			}
+			.m2{
+				margin-left: 15px;
+				color: #fff;
+			}
+			.del{
+				transition: all 0.5S; 
+			}
+			
+			.del:hover{
+				background: rgba(255,0,0,.7);
+				color:#000;
+			}
+			
+			h1{
+				margin: 20px 50px;
+				color: rgba(255,255,255,.8);
+			}
+			.pl{
+				font-size: 30px;
+				margin-left: 90px;
+				color: rgb(254,84,64);
+				cursor: pointer;
+				font-weight: bolder;
+				text-shadow: 2px 2px 1px rgba(0,0,0,.7);
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="god">
+			<h1>留言板</h1>
+			<span class="pl">Footprint</span>
+		</div>
+		
+		
+		<div class="board">
+			<div class="top">
+				<p>Leave tracks</p>
+				<span class="title">Theme</span><input type="text" class="tx" placeholder="主题"/>
+			</div>
+			
+			<div class="bot">
+				<textarea name="" rows="" cols="" class="cont" placeholder="请输入内容"></textarea>
+				<input type="button" class="btn" value="UP" />
+			</div>
+		</div>
+		
+		
+		<div class="blog">
+			<ul class="list">
+				<!--<li class = 'hero'><span class="m1">孟祥</span><em class="m2">奥特曼</em><i class="del">删</i></li>-->
+			</ul>
+		</div>
+		
+		
+		
+		
+	</body>
+</html>
+
+
+
+
+<script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.js"></script>
+
+<script type="text/javascript">
+
+	jQuery.noConflict();
+	
+	
+	(function($){
+		$(function(){
+			
+			var oT = $(".tx"),
+				oC = $(".cont"),
+				oBtn = $(".btn"),
+				oBox = $(".board");
+			
+			var oList = $(".list"),
+				sHtml = '',
+				oPl = $('.pl');
+				
+				
+			oPl.click(function(){
+				oBox.fadeIn(500,'linear');
+			});
+						
+			
+			
+			oBtn.click(function(){
+	
+				if(localStorage.getItem("text") == null){
+					
+					var arr =[];
+					
+				}else{	
+
+					var arr = JSON.parse(localStorage.getItem("text"));
+				}
+				
+				var oTemp = {
+					title:oT.val(),
+					cont:oC.val()
+					};
+					
+				arr.push(oTemp);
+
+				localStorage.setItem("text",JSON.stringify(arr));
+			
+				oT.val("");
+				oC.val("");
+				
+				alert("留言成功");
+				
+				oBox.animate({opacity:0},300,function(){
+					
+					window.location.assign("http://127.0.0.1:8020/留言板的实现/index.html");
+				})
+				
+	
+			});
+			
+			var main = JSON.parse(localStorage.getItem("text"));
+			
+			
+			$.each(main, function(i,v) {
+					sHtml += '<li class = "hero"><span class="m1">'+ v.title +'</span><em class="m2">'+ v.cont +'</em><i class="del">删</i></li>'					
+					oList.html(sHtml);
+				});
+				
+				var oDel = $(".list i");
+				
+				var oHero = $(".hero");
+				
+	
+				
+				
+			oDel.click(function(){
+				
+				var iIndex = oDel.index($(this));
+				
+				oHero.eq(iIndex).remove();
+				
+				main.splice(iIndex,1);
+				
+				localStorage.setItem("text",JSON.stringify(main));
+				window.location.assign("http://127.0.0.1:8020/留言板的实现/index.html");
+				
+			});
+			
+			
+//			localStorage.clear();
+			
+
+
+		});
+	})(jQuery);
+	
+</script>
