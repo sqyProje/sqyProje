@@ -1,0 +1,1098 @@
+<html>
+
+	<head>
+		<title>个人简历</title>
+		<meta charset="utf-8">
+		<meta name="viewport"  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="description" content="个人应聘工作简历，适用各职业.">
+	 	<!-- no cache -->
+	   
+        <link rel="stylesheet" href="css/swiper.css" />
+        <link rel="stylesheet" href="css/animate.min.css" />  
+	    <script src="js/jquery-2.1.0.js"></script>
+	    <script src="js/swiper.js"></script>
+	    <script src="js/animate.min.js"></script>
+	   
+		<style>
+	    section{
+				display: block;
+			}
+			li{
+				list-style: none;
+			}
+		body{
+				/*background-color: #000;*/
+				width:100%;
+			    height: 100%;
+			    font-weight: 300;
+			    font-family: 'Microsoft Yahei',Tahoma,Helvetica,Arial,sans-serif;
+			    font-size: 62.5%;
+			    line-height: 1.231;
+			    display: -webkit-box;
+			    -webkit-box-align: stretch;
+			    position: relative;	
+		    }
+		    *{
+				padding:0;
+				margin:0;
+				box-sizing: border-box;
+				
+			}
+		    .wrapper{
+		    	width:100%;
+		    	position: relative;
+		    }
+			.swiper-button-prev{
+				/*right:-10px;*/
+				left:88%;
+				top:40%;
+			}
+          .swiper-button-next, .swiper-button-prev{
+         	    transform: rotate(90deg);
+         }
+          .swiper-pagination-progress .swiper-pagination-progressbar {
+                background: #F3B4C7;
+            }
+          .swiper-container .swiper-pagination{
+            	right:0;
+            	left:98%;
+            }
+            .main-page-1{
+            	z-index:2
+            }
+             .main-page-2{
+            	z-index:3
+            }
+             .main-page-3{
+            	z-index:4
+            }
+             .main-page-4{
+            	z-index:5
+            }
+             .main-page-5{
+            	z-index:5
+            }
+             .main-page-6{
+            	z-index:6;
+            }
+            
+            .content-1{
+            	width:100%;
+            	height:100%;
+            	background:url(img/page-1-bg.png);
+            	background-size:90% 100%;
+            }
+			.ul-1ist{
+				position:relative;
+				width:100%;
+            	height:100%;
+			}
+			.l-cont{
+				position:absolute;				
+				width:70%;
+				
+				left:25%;
+				
+			}
+			.page-list-1{
+				top:10%;
+				height:80px;
+				background:  url(img/hengxian.png) no-repeat;
+			}
+			.page-list-2{
+				top:18%;
+				height:50px;
+				
+			}
+			.my-title{
+				font-size:20px;
+				color:#FFF;
+				margin: 10PX;;
+			}
+			
+			.my-eng{
+				color:#737572;
+			}
+			.page-list-3{
+				top:40%;
+				height:289px;
+				left:18%;
+				transition: all .5s linear .1s;
+				/*transform: scale(2);*/
+			}
+			.page-list-6{
+				top:38%;
+				left:14%
+			}
+			.my-quan img{
+				width:100%;
+				height: auto;
+			}
+			.page-list-4{
+				width:55%;
+				top:50%;
+				left:28%;
+				height:207px;
+			}
+			.page-list-5{
+				width:10%;
+				top:85%;
+				left:50%;	
+				height:20px;
+				animation-name:move;
+				animation-duration:1s;
+				animation-iteration-count:infinite;
+				z-index: 100;
+			}
+			@keyframes move{
+				
+				to{
+					top:90%;
+					opacity:0;
+				}
+			}
+			.content-2{
+            	width:100%;
+            	height:100%;
+            	background:url(img/page2-bg.jpg);
+            	background-size:90% 100%;
+            }
+            .con2-first{
+            	width:85%;
+            	height:85%;
+            	position:absolute;
+            	top:5%;
+            	right:5%;
+            	background: url(img/PAGE2-ul-bg.png) no-repeat;
+            	
+            }
+            
+            .con2-li{
+            	position: absolute;
+            	top:40%;
+            	left:15%;
+            	width:60%;
+            	height:70%;
+            	background:url(img/hengxian.png) no-repeat;
+            	background-size:100% 40%;
+            	/*animation: rollIn 1s ease 1.2s 1 both*/
+            
+            }
+            @keyframes rollIn {
+				0% {
+					opacity: 0;
+					-webkit-transform: translate3d(-100%,0,0) rotate3d(0,0,1,-120deg);
+					transform: translate3d(-100%,0,0) rotate3d(0,0,1,-120deg)
+				}
+			
+				100% {
+					opacity: 1;
+					-webkit-transform: none;
+					transform: none
+				}
+			}
+		
+		 .rollIn {
+				-webkit-animation-name: rollIn;
+				animation:rollIn 1s ease 1.2s 1 both;
+			}
+           .con2-li   img{
+            	width:100%;
+            	animation:hengxian ;
+            	animation-iteration-count: infinite;
+            }
+            .content-2-comment{
+            	color: #fff;
+            	width:80%;
+            	height:10%;
+            	position:absolute;           	
+            	left:18%;
+            	line-height:10%;
+            	
+            }
+            .con2-name{
+            	top:38%;            	
+            }
+           
+             .con2-address{
+            	top:45%;
+            }
+             .con2-email{
+            	top:52%;
+            }
+             .con2-hobby{
+            	top:59%;
+            }
+             .con2-school{
+            	top:66%;
+            }
+            .con2-only{
+            	width: 50%;
+            	height:30%;
+            	position: absolute;
+            	top:7%;
+            	left:40%;
+            	/*border: 1px solid #4B946A;*/
+            	/*border-radius:50%;*/
+            }
+            .con2-only div{
+            	height: 100%;
+            	width: 100%;;
+            }
+            .con2-only .only-me{
+            	border-radius:50% ;
+            	height:100%;
+            	width:60%;
+            }
+             .con2-only img,.cont-foot img, .con2-first img {
+			    width: 100%;
+			    height: auto;
+			}
+			.cont-foot{
+				display: inline;
+				width:100%;
+				height:30%;
+				position: absolute;
+			    bottom:0%;
+			    /*right:-35px;*/
+			}
+			
+	
+			.fadeInLeft{
+				animation:fadeInLeft 2s ease 0s 1 both;
+				
+			}
+			@keyframes fadeInLeft{
+				0% {
+					opacity: 0;
+					-webkit-transform: translate3d(-100%,0,0);
+					transform: translate3d(-100%,0,0)
+				}
+			
+				100% {
+					opacity: 1;
+					-webkit-transform: none;
+					transform: none
+				}
+			}
+			.ul-list-2 .fadeInDown:nth-child(1),.ul-list-3 .fadeInDown:nth-child(1){
+				animation: fadeInDown 1s ease 0s 1 both;
+			}
+			.fadeInDown:nth-child(2){
+				animation: fadeInDown 1s ease 1.2s 1 both;
+			}
+			.fadeInDown:nth-child(3){
+				animation: fadeInDown 1s ease 1.3s 1 both;
+			}
+			.fadeInDown:nth-child(4){
+				animation: fadeInDown 1s ease 1.4s 1 both;
+			}	
+			.fadeInDown:nth-child(5){
+				animation: fadeInDown 1s ease 1.5s 1 both;
+			}
+			.fadeInDown:nth-child(6){
+				animation: fadeInDown 1s ease 1.6s 1 both;
+			}
+					
+			@keyframes fadeInDown{
+				0% {
+					opacity: 0;
+					-webkit-transform: translate3d(0,-100%,0);
+					transform: translate3d(0,-100%,0)
+				}
+			
+				100% {
+					opacity: 1;
+					-webkit-transform: none;
+					transform: none
+				}
+			}
+			.page-list-3 {
+				transition: All 0.4s ease-in-out;
+				-webkit-transition: All 0.4s ease-in-out;
+				-moz-transition: All 0.4s ease-in-out;
+				-o-transition: All 0.4s ease-in-out;
+			}
+			
+			.page-list-3:hover {
+				transform: scale(2)();
+				-webkit-transform: rotate(360deg);
+				-moz-transform: rotate(360deg);
+				-o-transform: rotate(360deg);
+				-ms-transform: rotate(360deg);
+			}
+			/*第三页*/
+			.con3-title{
+				position:absolute;
+				top:10%;				
+				left: 35%;
+			    font-size: 20px;
+			    color: #fff;
+			   
+			}
+			
+			.bounceIn{
+				 animation: bounceIn 2s ease 0s 1 both
+			}
+			@keyframes bounceIn {
+				0%,
+				100%,
+				20%,
+				40%,
+				60%,
+				80% {
+					-webkit-transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+					transition-timing-function: cubic-bezier(.215, .61, .355, 1)
+				}
+				0% {
+					opacity: 0;
+					-webkit-transform: scale3d(.3, .3, .3);
+					transform: scale3d(.3, .3, .3)
+				}
+				20% {
+					-webkit-transform: scale3d(1.1, 1.1, 1.1);
+					transform: scale3d(1.1, 1.1, 1.1)
+				}
+				40% {
+					-webkit-transform: scale3d(.9, .9, .9);
+					transform: scale3d(.9, .9, .9)
+				}
+				60% {
+					opacity: 1;
+					-webkit-transform: scale3d(1.03, 1.03, 1.03);
+					transform: scale3d(1.03, 1.03, 1.03)
+				}
+				80% {
+					-webkit-transform: scale3d(.97, .97, .97);
+					transform: scale3d(.97, .97, .97)
+				}
+				100% {
+					opacity: 1;
+					-webkit-transform: scale3d(1, 1, 1);
+					transform: scale3d(1, 1, 1)
+				}
+			}
+			.content-3-quan {
+				position:absolute;
+				width:25%;
+				height:39px;
+				
+				left:15%;
+				
+			}
+			.con3-text{
+			    position:absolute;
+				/*width:39px;
+				height:39px;*/
+				
+				left:22%;
+		   }
+		   .text3-1{
+		   	 top:27%;
+		   	 color:#44CB83;
+		   }
+		   .text3-2{
+		   	 top:36%;
+		   	 color:navajowhite;
+		   	  
+		   }
+		   .text3-3{
+		   	 top:46%;
+		   	 color:plum;
+		   }
+		   .text3-4{
+		   	 top:56%;
+		   	 color:crimson;
+		   }
+		   .text3-5{
+		   	 top:66%;
+		   	 color:yellow;
+		   }
+		   
+			.quan3-1{
+				top:27%;
+			}
+			.quan3-2{
+				top:36%;
+			}
+			.quan3-3{
+				top:45%;
+			}
+			.quan3-4{
+				top:55%;
+			}
+			
+			.quan3-5{
+				top:66%;
+			}
+			.content-3-quan img{
+				width:100%;
+				height:39px;
+			}
+			.fadeInUp:nth-child(6){
+				 animation: fadeInUp 2s ease 1.3s 1 both
+			}
+			.fadeInUp:nth-child(7){
+				 animation: fadeInUp 2s ease 1.6s 1 both
+			}
+			@keyframes fadeInUp {
+			0% {
+				opacity: 0;
+				-webkit-transform: translate3d(0,100%,0);
+				transform: translate3d(0,100%,0);
+				-ms-transform: translate3d(0,100%,0)
+			}
+		
+			100% {
+				opacity: 1;
+				-webkit-transform: none;
+				transform: none;
+				-ms-transform: none
+			}
+		}
+		.text3-comment {
+			position: absolute;
+			left:45%;
+			width:50%;
+			z-index:100;
+			/*background: #FFDDDD;*/
+		}
+		.t3-comment{
+			height:39px;
+		}
+		.text3-comment, .clamp-coment{
+			
+			overflow:hidden;
+			text-overflow: ellipsis;
+			display:-webkit-box;
+			-webkit-line-clamp:2;
+			-webkit-box-orient:vertical;
+			
+		}
+		.text3-glasses{
+			width:70%;
+			height:40%;
+			position: absolute;
+			bottom:0;
+			left:0;
+		}	
+		.text3-glasses img{
+			position: absolute;
+			bottom:-30%;
+			left:-30%;
+			width:120%;
+			height:100%;
+		}
+		
+		@keyframes fadeInUp {
+			0% {
+				opacity: 0;
+				-webkit-transform: translate3d(0,100%,0);
+				transform: translate3d(0,100%,0);
+				-ms-transform: translate3d(0,100%,0)
+			}
+		
+			100% {
+				opacity: 1;
+				-webkit-transform: none;
+				transform: none;
+				-ms-transform: none
+			}
+		}
+		
+		.fadeInUp {
+		
+			animation-name: fadeInUp
+		}
+		
+		.text3-pen{
+			position: relative;
+			
+		}
+		.text3-pen img{
+			width:60%;
+			height:auto;
+			position: absolute;
+			
+			right:-30%;
+		}
+		.page4-comment{
+			width:2%;
+			height:1%;
+			background: #fff;
+			position:absolute;
+			left:20%;
+			border-radius: 50%;
+			
+		}
+		.page4-quan3-1{
+			top:27%;
+		}
+		.page4-quan3-2{
+			top:43%;
+		}
+		.page4-quan3-3{
+			top:57%;
+		}
+		.page4-quan3-4{
+			top:71%;
+		}
+		
+		.text4-1{
+			
+			top:25%;
+			
+		}
+		.text4-2{
+			top:41%;
+
+		}
+		.text4-3{
+			top:55%;
+
+		}
+		.text4-4{
+			top:69%;
+
+		}
+		
+		.page4-text{
+			position:absolute;
+			left:25%;
+			width:69%;
+			color:#fff;
+			
+		}
+		.text-t-4{
+			height:40px;
+			
+		}
+		@keyframes bounceInUp {
+			0%,100%,60%,75%,90% {
+				-webkit-transition-timing-function: cubic-bezier(.215,.61,.355,1);
+				transition-timing-function: cubic-bezier(.215,.61,.355,1)
+			}
+		
+			0% {
+				opacity: 0;
+				-webkit-transform: translate3d(0,3000px,0);
+				transform: translate3d(0,3000px,0)
+			}
+		
+			60% {
+				opacity: 1;
+				-webkit-transform: translate3d(0,-25px,0);
+				transform: translate3d(0,-25px,0)
+			}
+		
+			75% {
+				-webkit-transform: translate3d(0,10px,0);
+				transform: translate3d(0,10px,0)
+			}
+		
+			90% {
+				-webkit-transform: translate3d(0,-5px,0);
+				transform: translate3d(0,-5px,0)
+			}
+		
+			100% {
+				-webkit-transform: none;
+				transform: none
+			}
+		}
+
+		 .bounceInUp:nth-last-child(4) {		
+			animation: bounceInUp 2s ease .2s 1 both;			
+		}
+		.bounceInUp:nth-last-child(3)  {		
+			animation: bounceInUp 2s ease .4s 1 both;			
+		}
+	   .bounceInUp:nth-last-child(2) {		
+			animation: bounceInUp 2s ease .6s 1 both;			
+		}
+		.bounceInUp:nth-last-child(1)  {		
+			animation: bounceInUp 2s ease .8s 1 both;			
+		}
+       .page5-conment{
+       	 position: absolute;  	 
+       	 left:20%;   
+       	 color:#fff;
+       	 font-size:14px;
+       	 line-height:20px;   	 
+       }
+       .page5-list-1{
+         top:25%;
+         width:55%;
+       	 height:15%;
+       	 /*background: paleturquoise;*/
+       }
+       .page5-list-2{
+         bottom:20%;
+       	 width:55%;
+       	 height:30%;
+       	 /*background: paleturquoise;*/
+       }
+       @keyframes bounceInDown {
+			0%,100%,60%,75%,90% {
+				-webkit-transition-timing-function: cubic-bezier(.215,.61,.355,1);
+				transition-timing-function: cubic-bezier(.215,.61,.355,1)
+			}
+		
+			0% {
+				opacity: 0;
+				-webkit-transform: translate3d(0,-3000px,0);
+				transform: translate3d(0,-3000px,0)
+			}
+		
+			60% {
+				opacity: 1;
+				-webkit-transform: translate3d(0,25px,0);
+				transform: translate3d(0,25px,0)
+			}
+		
+			75% {
+				-webkit-transform: translate3d(0,-10px,0);
+				transform: translate3d(0,-10px,0)
+			}
+		
+			90% {
+				-webkit-transform: translate3d(0,5px,0);
+				transform: translate3d(0,5px,0)
+			}
+		
+			100% {
+				-webkit-transform: none;
+				transform: none
+			}
+		}
+
+		.ul-list-6 .bounceInDown {
+			
+			
+			animation: bounceInDown 2s ease 0s 1 both;		
+		}
+		.heng6-only{
+			position:absolute;
+			top:40%;
+			left:13%;
+			color:#fff;
+			width:65%;
+		}
+          .page5-mouse{
+          	width:100%;
+          	height:20%;
+          	position:absolute;
+          	bottom:0;
+          	
+          }
+           .page5-mouse img{
+           	/*position: absolute;*/
+           	/*bottom:-80%;*/
+           	/*right:-30%;*/
+           	width:100%;
+           	height:auto;
+           }
+           .xuexian{
+           	display: inline-block;
+           	height:10px;
+           	overflow: hidden;
+           	width:100%;
+           }
+		.con6-list{
+			width:50%;
+			height:30%;
+			position: absolute;
+			top:18%;
+			left:21%;
+		}
+		.con6-list img{
+			width:100%;
+			height:auto;
+		}
+		.con6-list-6{
+			width:70%;
+			height:10%;
+			text-align: center;
+			color: #fff;
+			position: absolute;
+			top:60%;
+			left:15%;
+			
+		}
+		@keyframes puffIn {
+			0% {
+				opacity: 0;
+				transform: scale(2,2);
+				transform-origin: 50% 50%;
+				filter: blur(2px)
+			}
+		
+			100% {
+				opacity: 1;
+				transform: scale(1,1);
+				transform-origin: 50% 50%;
+				filter: none
+			}
+		}
+		
+		.puffIn {
+			/*-webkit-animation-name: puffIn;*/
+			animation-name: puffIn
+          }
+		</style>
+	</head>
+
+	<body>
+		 <div class='wrapper swiper-container '>
+		 	<div class='main-content swiper-wrapper'>
+		 		
+			 	<section class='main-page main-page-1  swiper-slide'>
+			 		<div class='content-1'>
+			 			<ul class='ul-1ist'>
+			 			  	<li class='l-cont page-list-1 ani'  swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay=".3s">
+			 			  		<div class='page-1'>
+			 			  			<div class='my-title'>
+			 			  				<span>[个人简历]</span>
+			 			  			</div>
+			 			  			
+			 			  		</div>
+			 			  	</li>
+			 			  	<li class='l-cont page-list-2 ani' swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+			 			  		<div class='page-1'>
+			 			  			<div class='my-eng'>
+			 			  				<span>CURRICULUM VITAE</span>
+			 			  			</div>
+			 			  		</div>
+			 			  	</li>
+			 			  	<li class='l-cont page-list-3 ani' swiper-animate-effect="zoomIn " swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+			 			  		<div class='page-1'>
+			 			  			<div class='my-quan'>
+			 			  		 	 <img src="img/page-quan.png" alt="" />
+			 			  		    </div>
+			 			  		</div>
+			 			  		 
+			 			  	</li>
+			 			  	<li class='l-cont page-list-4 ani' swiper-animate-effect="bounceInDown" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">
+			 			  		<div class='page-1'>
+			 			  			<div class='my-quan'>
+			 			  		 	 <img src="img/my-computer.png" alt="" />
+			 			  		    </div>
+			 			  		</div>
+			 			  		 
+			 			  	</li>
+			 			  	<li class='l-cont page-list-6 ani' swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay=".2s">
+			 			  		<div class='page-1'>
+			 			  			<div class='my-quan'>
+			 			  		 	 <img src="img/page-quan2.png" alt=""  style='width:110%'/>
+			 			  		    </div>
+			 			  		</div>
+			 			  		 
+			 			  	</li>
+			 			  	
+			 			  	
+			 		    </ul>
+			 		</div>
+			 	</section>
+			 	<section class='main-page main-page-2 swiper-slide'>
+			 		<div class='content-2'>
+			 			<ul class='ul-list-2'>
+			 				<li class='con2-first ani' swiper-animate-effect='fadeInDown'></li>
+
+			 				<li class='content-2-comment con2-name ani' swiper-animate-effect='fadeInDown'>
+			 					<div >
+			 						<span>姓名：孙秋月  性别：女</span>
+			 					</div>
+			 				</li>
+			 				<li class='content-2-comment con2-address ani' swiper-animate-effect='fadeInDown'>
+			 					<div >
+			 						<span>籍贯：   广东           专业：   计算机信息管理</span>
+			 					</div>
+			 				</li>
+			 				<li class='content-2-comment con2-email ani' swiper-animate-effect='fadeInDown' >
+			 					<div >
+			 						<span>邮箱： 1214341589@qq.com</span>
+			 					</div>
+			 				</li>
+			 				<li class='content-2-comment con2-hobby  ani' swiper-animate-effect='fadeInDown' >
+			 					<div >
+			 						<span>特长:  代码、旅游、唱歌</span>
+			 					</div>
+			 				</li>
+			 				<li class='content-2-comment con2-school ani' swiper-animate-effect='fadeInDown' >
+			 					<div >
+			 						<span>毕业院校： 某某经济大学某经济大学</span>
+			 					</div>
+			 				</li>
+			 				<li class='con2-only ani' swiper-animate-effect='zoomIn'> 
+			 					<div><img class='only-me' src="img/me.png" alt="" /></div>
+			 				</li>
+			
+			 				<li class='cont-foot ani' swiper-animate-effect='fadeInLeft'>
+			 					<div><img src="img/page2-bg-3.png" alt="" /></div>
+			 				</li>
+			 				<li class='con2-li ani' swiper-animate-effect='rollIn' ></li>
+			 				
+			 			</ul>
+			 		</div>
+			 	</section>
+			 	<section class='main-page main-page-3 swiper-slide'>
+			 		<div class='content-2'>
+			 			<ul class='ul-list-3'>
+			 				<li class='con2-first ani' swiper-animate-effect='fadeInDown'>
+			 					<!--<div>
+			 						<span>[专业技能]</span>
+			 					</div>	-->
+			 				</li>
+			 				<li class='con3-title ani' swiper-animate-effect='bounceIn'>
+			 					<div>
+			 						<span>[专业技能]</span>
+			 					</div>	
+			 				</li>
+			 				<li class='content-3-quan quan3-1 ani' swiper-animate-effect='fadeInDown'>
+			 					<div>
+			 						<span><img src="img/quan-3.png" alt="" /></span>
+			 					</div>	
+			 				</li>
+			 				<li class='content-3-quan quan3-2 ani' swiper-animate-effect='fadeInDown'>
+			 					<div>
+			 						<span><img src="img/quan-3.png" alt="" /></span>
+			 					</div>	
+			 				</li>
+			 				<li class='content-3-quan quan3-3 ani' swiper-animate-effect='fadeInDown'>
+			 					<div>
+			 						<span><img src="img/quan-3.png" alt="" /></span>
+			 					</div>	
+			 				</li>
+			 				<li class='content-3-quan quan3-4 ani' swiper-animate-effect='fadeInUp'>
+			 					<div>
+			 						<span><img src="img/quan-3.png" alt="" /></span>
+			 					</div>	
+			 				</li>
+			 				<li class='content-3-quan quan3-5 ani' swiper-animate-effect='fadeInUp'>
+			 					<div>
+			 						<span><img src="img/quan-3.png" alt="" /></span>
+			 					</div>	
+			 				</li>
+			 				<li class='con3-text  text3-1 ani' swiper-animate-effect='bounceIn'>
+			 					<div>
+			 						<span>Ps</span>
+			 					</div>	
+			 				</li>
+			 				<li class='con3-text text3-2 ani' swiper-animate-effect='bounceIn'>
+			 					<div>
+			 						<span>Ps2</span>
+			 					</div>	
+			 				</li>
+			 				<li class='con3-text text3-3 ani' swiper-animate-effect='bounceIn'>
+			 					<div>
+			 						<span>Ps3</span>
+			 					</div>	
+			 				</li>
+			 				<li class='con3-text text3-4 ani' swiper-animate-effect='bounceIn'>
+			 					<div>
+			 						<span>Ps4</span>
+			 					</div>	
+			 				</li>
+			 				<li class='con3-text text3-5 ani' swiper-animate-effect='bounceIn'>
+			 					<div>
+			 						<span>Ps5</span>
+			 					</div>	
+			 				</li>
+			 				<li class='text3-comment  text3-1 ani' swiper-animate-effect='fadeInLeft'>
+			 					<div class="t3-comment clamp-coment">天若有情亦无情天若有情亦无情</div>	
+			 				</li>
+			 				<li class='text3-comment text3-2 ani' swiper-animate-effect='fadeInLeft'>
+			 					<div class=" t3-comment clamp-coment">搭顺风车</div>	
+			 				</li>
+			 				<li class='text3-comment  text3-3 ani' swiper-animate-effect='fadeInLeft'>
+			 					<div class="t3-comment clamp-coment">都烦烦烦烦烦烦烦烦烦</div>	
+			 				</li>
+			 				<li class='text3-comment  text3-4 ani' swiper-animate-effect='fadeInLeft'>
+			 					<div class="t3-comment clamp-coment">fdffffffffffff</div>	
+			 				</li>
+			 				<li class='text3-comment  text3-5 ani' swiper-animate-effect='fadeInLeft'>
+			 					<div class="t3-comment clamp-coment">dfsd对房地产香港的房地产</div>	
+			 				</li>
+			 				<li class='text3-glasses ani' swiper-animate-effect='fadeInUp'>
+			 					<div>
+			 						<span><img src="img/page3-glasses.png"/></span>
+			 					</div>
+			 				</li>
+			 				<li class='text3-pen ani' swiper-animate-effect='rollIn'>
+			 					<div>
+			 						<span><img src="img/page-3-pen.png"/></span>
+			 					</div>
+			 				</li>
+
+			 			</ul>
+			 		</div>
+			 	</section>
+			 	<section class='main-page main-page-4 swiper-slide'>
+			 		<div class='content-2'>
+
+			 			<ul class='ul-list-2 ul-list-4'>
+			 				<li class='con2-first ani' swiper-animate-effect='fadeInDown'></li>
+			 				<li class="con3-title ani" swiper-animate-effect="bounceIn" >
+			 					<div>
+			 						<span>[工作经验]</span>
+			 					</div>	
+			 				</li>
+			 				
+			 				<li class='page4-comment page4-quan3-1 ani' swiper-animate-effect='zoomIn' ></li>
+			 				<li class='page4-comment page4-quan3-2 ani' swiper-animate-effect='zoomIn' ></li>
+			 				<li class='page4-comment page4-quan3-3 ani' swiper-animate-effect='zoomIn' ></li>
+			 				<li class='page4-comment page4-quan3-4 ani' swiper-animate-effect='zoomIn' ></li>
+			 				<li class='page4-text text4-1 ani' swiper-animate-effect='bounceInUp'>
+			 					<div class='text4-comment text4-1 '>
+                                    <span>2014-2015</span>
+			 						<div class='text-t-4 clamp-coment'>担任组织部部长一职</div>
+			 					</div>
+			 				</li>
+			 				<li class='page4-text text4-2  ani' swiper-animate-effect='bounceInUp'>
+			 					<div class=' text4-comment'>
+			 						<span>2015-2016</span>
+			 						<div class='text-t-4 clamp-coment'>寒假寒假外出暑假工寒假外出暑假工寒假外出暑假工外出暑假工</div>
+			 					</div>
+			 				</li>
+			 				<li class='page4-text text4-3  ani' swiper-animate-effect='bounceInUp'>
+			 					<div class='text4-comment'>
+			 						<span>2016</span>
+			 						<div class='text-t-4 clamp-coment'>在某公司担任。。。。。。一职</div>
+			 					</div>
+			 				</li>
+			 				<li class='page4-text text4-4  ani' swiper-animate-effect='bounceInUp'>
+			 					<div class='text-t-4 text4-comment'>
+			 						<span>2016</span>
+			 						<div class='clamp-coment'>在某公司担任。。。。。。就职</div>
+			 					</div>
+			 				</li>
+			 				
+			 			</ul>
+			 		</div>	
+			 		
+
+			 	</section>
+			 	<section class='main-page main-page-5 swiper-slide'>
+			 		<div class='content-2'>
+			 			<ul class='ul-list-2 ul-list-6'>
+			 				<li class='con2-first ani' swiper-animate-effect='fadeInDown'></li>
+			 				<li class="con3-title ani" swiper-animate-effect="bounceIn" >
+			 					<div>
+			 						<span>[求职意向]</span>
+			 					</div>	
+			 				</li>
+			 			  	<li class='page5-conment page5-list-1 ani' swiper-animate-effect='fadeInUp' >
+			 			  		<div>
+			 			  			<span>
+			 			  				期望职位：旅游产品运营
+			 			  			</span>
+			 			  			<div>
+			 			  				<span>期望行业：互联网旅游</span>
+			 			  			</div>
+			 			  			<div>
+			 			  				<span>期望薪资：面谈</span>
+			 			  			</div>
+			 			  		</div>
+			 			  	</li>
+			 			  	<li class='heng6-only ani' swiper-animate-effect='zoomIn'>
+			 			  		<div>
+			 			  			<span class='xuexian'>---------------------------------------------------------------------------------------------------</span>
+			 			  		</div>
+			 			  	</li>
+			 			    <li class='page5-conment page5-list-2 ani' swiper-animate-effect='bounceInDown' >
+			 			  		<div>
+			 			  			<span>
+			 			  				行业见解：随着国民生活水平的提高和
+										旅游行业高歌猛进式的发展，旅游消费
+										早已不是少数人才能接触的“小公举”，
+										而是走向大众，成为居民常态化生活选择。
+										自由行和私人订制渐成主流。
+			 			  			</span>
+			 			  		</div>
+			 			  	</li>
+			 			  	<li class='page5-mouse ani' swiper-animate-effect='bounceInUp'  swiper-animate-duration="0.3s" swiper-animate-delay="0.3s">
+			 			  		<div>
+			 			  			<span><img src="img/page-6-mouse.png" alt="" /></span>
+			 			  		</div>
+			 			  	</li>
+			 			</ul>
+			 		</div>	
+			 	</section>
+			 	<section class='main-page main-page-6 swiper-slide' >
+			 		<div class='content-2'>
+			 			<ul class='ul-list-3,ul-list-6'>
+			 				<li class='con2-first ani' swiper-animate-effect='fadeInDown'></li>
+			 				<li class="cont-foot ani" swiper-animate-effect="fadeInLeft" >
+			 					<div><img src="img/page2-bg-3.png" alt=""></div>
+			 				</li>
+			 				<li class="con3-title ani" swiper-animate-effect="bounceIn">
+			 					<div>
+			 						<span>[静待佳音]</span>
+			 					</div>	
+			 				</li>
+			 				<li class='con6-list'>
+			 					<div>
+			 						<span>
+			 							<img src="img/page-quan2.png" alt="" />
+			 						</span>
+			 					</div>
+			 				</li>
+			 				<li class='con6-list-6 ani' swiper-animate-effect="puffIn">
+			 					<div>
+			 						<span>
+			 							<div><span>微信：have_a_family</span></div>
+			 							<div><span>手机：15238357486</span></div>
+			 							<div><span>业务范围：前端开发、h5微场景制作</span></div>
+			 						</span>
+			 					</div>
+			 				</li>
+			 			</ul>
+			 		</div>	
+			 	
+			 	</section>
+			 	
+			</div> 
+			 <!--<div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>-->
+			<div class='swiper-pagination'></div>
+			
+		</div>
+		<section class='l-cont page-list-5'>
+	 		<div class='page-1'>
+	  			<div class='my-quan'>
+	  				<img src="img/page-1-sjx.png" alt="" />
+	 			 </div>
+	 		</div>
+		</section>
+		<script>
+			var mySwiper = new Swiper('.wrapper',{
+				direction : 'vertical',
+				nextButton: '.swiper-button-next',
+		        prevButton: '.swiper-button-prev',
+		        pagination: '.swiper-pagination',
+		        paginationType: 'progress',
+		        onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+				    swiperAnimateCache(swiper); //隐藏动画元素 
+				    swiperAnimate(swiper); //初始化完成开始动画
+				  }, 
+				onSlideChangeEnd: function(swiper){ 
+				    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+				  } 
+				 
+				})
+			var test=(function(a){
+				this.a=a;
+				return function(b){
+					return this.a+b;
+				}
+			}(function(a,b){
+				return  a;
+				
+			}(1,2)));
+			console.log(test(4));
+		</script>
+		
+	</body>
+	
+
+</html>

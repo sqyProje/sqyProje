@@ -1,0 +1,24 @@
+{
+	"index.html": {
+		"resources": [
+			"img/page-quan.png",
+			"js/animate.min.js",
+			"img/page2-bg.jpg",
+			"img/hengxian.png",
+			"js/jquery-2.1.0.js",
+			"css/swiper.css",
+			"css/animate.min.css",
+			"img/page2-bg-3.png",
+			"img/PAGE2-ul-bg.png",
+			"js/swiper.js",
+			"img/page-1-bg.png",
+			"img/page-quan2.png",
+			"img/page-1-sjx.png",
+			"img/my-computer.png",
+			"img/quan-3.png",
+			"img/page3-glasses.png",
+			"img/page-6-mouse.png",
+			"img/page-3-pen.png"
+		]
+	}
+}
