@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+	<head>
+		<meta charset="utf-8">
+		<!-- SEO  -->
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+		<!-- 苹果专用 -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+		<meta name="format-detection" content="telephone=no" />
+		<!-- 简单移动端适配 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<!-- 图标 -->
+		<link rel="shortcut icon" href="">
+
+		<title>模板</title>
+		<link rel="stylesheet" href="">
+		<script type="text/javascript" src="../js/angular.min.js"></script>
+
+	</head>
+
+	<body>
+		<fieldset>
+			<legend>定义元素指令</legend>
+			<div my-kjin></div> 
+
+		</fieldset>
+		<script type="text/javascript">
+			//当我们引入外来模板的时候我们不能使用replace:true
+			var myApp = angular.module('myApp', [])
+			myApp.directive('myKjin',function(){
+				return {
+					restrict: 'A',
+//					replace:true,
+					templateUrl:"../tmp/template1.html",
+				}
+			})
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <!-- SEO  -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- 苹果专用 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 简单移动端适配 -->
+   	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!-- 图标 -->
+	<link rel="shortcut icon" href="">
+    
+    <title>模板</title>
+    <link rel="stylesheet" href="">
+    <!-- 最新的1.5.X -->
+    <script type="text/javascript" src="../angular.min.js" ></script>
+    
+</head>
+
+<body>
+	<fieldset>
+		<legend>数字 -- 格式</legend>
+		<div ng-controller="myCtrl">
+			<!--
+				注意：
+					关键字大小写，json必须是小写
+					其次数据格式必须是json格式的才可使用
+					没什么变化:我们想要出现json格式的效果必须把数据放到我们的《pre》标签中才会有效果
+			-->
+			json基本操作1：<div>{{data | json}}</div>
+			<hr />
+			<!--json基本操作2：<span>{{data | JSON}}</span>-->
+			
+			json基本操作2：<div>{{data | json:4}}</div>
+			<hr />
+			<pre>{{ ([{name:"张三",age:18},{name:"李四",age:19}]) | json:2 }}</pre>
+			<pre>{{ ([{name:"张三",age:18},{name:"李四",age:19}]) | json:6 }}</pre>
+			<hr />
+			
+	    </div>
+		
+	</fieldset>
+	
+    <script type="text/javascript">
+    	var myApp = angular.module('myApp',[]);
+    	myApp.controller('myCtrl',['$scope',function($scope){
+    		$scope.data= [
+    			{name:"张三",age:18},
+    			{name:"李四",age:19},
+    			{name:"王五",age:20},
+    			{name:"赵六",age:10},
+    		];
+//  		$scope.data = JSON.stringify($scope.data);
+    		console.log(typeof $scope.data);
+    		console.log($scope.data);
+    	}])
+    	
+    </script>
+</body>
+
+</html>

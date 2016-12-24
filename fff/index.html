@@ -363,6 +363,22 @@
 				
 			}(1,2)));
 			console.log(test(4));
+			var x=10,y=10;
+			function inita(){ 
+
+			   console.log(y);
+               
+               console.log(x);
+               var x=5;
+               
+			}
+			inita();
+			(function() {
+				   var m = window.n = 5;
+			})();
+				 
+				console.log(n); //5
+				console.log(m); //Error, m is not defined
 		</script>
 		
 	</body>

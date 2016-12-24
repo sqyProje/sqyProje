@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <!-- SEO  -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- 苹果专用 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 简单移动端适配 -->
+   	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!-- 图标 -->
+	<link rel="shortcut icon" href="">
+    
+    <title>模板</title>
+    <link rel="stylesheet" href="">
+    <script type="text/javascript" src="../js/angular.min.js" ></script>
+    
+</head>
+
+<body>
+	<fieldset>
+		<legend>自定义指令</legend>
+		
+		<rongyi-directive></rongyi-directive>
+		<!--<rongyiDirective></rongyiDirective>-->
+		
+	</fieldset>
+   <!--
+   		1.什么是自定义指令
+   			angular.module().directive()声明一个自定义的指令
+   			注意：
+   				第一点  声明 .directive()第一个参数 一般的写法 驼峰命名法 中间的字母大写
+   				第二点 声明以后的使用  myCustomer =》 my-customer
+   					【指令命名规范】
+   					
+   			指令扩展了我们Html标签
+   			
+   		2.自定义指令包含什么
+   			html网页中
+  
+   			<my-dir></my-dir>  E element 代表元素
+			<span my-dir="exp"></span>  A   attribute 代表属性 
+			/<!-- directive: my-dir exp --/>M   comment 代表注释
+			<span class="my-dir: exp;"></span> C class   代表Class
+   
+   -->
+	
+	<script type="text/javascript">
+		var myApp  = angular.module('myApp',[]);
+		myApp.directive('rongyiDirective',function(){
+			return {
+				restrict: 'E',
+				template : "<h1>自定义指令!</h1>"	
+			}
+		})
+		
+	</script>
+   
+</body>
+
+</html>

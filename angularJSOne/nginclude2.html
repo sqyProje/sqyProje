@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="includeExample">
+
+	<head>
+		<meta charset="utf-8">
+		<!-- SEO  -->
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+		<!-- 苹果专用 -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+		<meta name="format-detection" content="telephone=no" />
+		<!-- 简单移动端适配 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<!-- 图标 -->
+		<link rel="shortcut icon" href="">
+
+		<title>模板</title>
+		<link rel="stylesheet" href="">
+		<script type="text/javascript" src="js/angular.min.js"></script>
+
+	</head>
+
+	<body>
+		<!--
+			ng-include作用是引入外来的模板文件
+		-->
+		<div ng-controller="ExampleController">
+			<select ng-model="template" ng-options="y.name for (x,y) in templates">
+				<option value="">(blank)</option>
+			</select>
+			url of the template: <code>{{template.url}}</code>
+			<hr/>
+			<div>
+				<div ng-include="template.url"></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var myApp = angular.module('includeExample', [])
+			myApp.controller('ExampleController', ['$scope', function($scope) {
+				$scope.templates = [{
+					name: '第一个模板',
+					url: 'tmp/template1.html'
+				}, {
+					name: '第二个模板',
+					url: 'tmp/template2.html'
+				},{
+					name: '第三个模板',
+					url: 'tmp/template3.html'
+				}];
+//				$scope.template = $scope.templates[0];
+			}]);
+		</script>
+
+	</body>
+
+</html>

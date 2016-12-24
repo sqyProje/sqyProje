@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+	<head>
+		<meta charset="utf-8">
+		<!-- SEO  -->
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+		<!-- 苹果专用 -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+		<meta name="format-detection" content="telephone=no" />
+		<!-- 简单移动端适配 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<!-- 图标 -->
+		<link rel="shortcut icon" href="">
+
+		<title>模板</title>
+		<link rel="stylesheet" href="">
+		<script type="text/javascript" src="js/angular.min.js"></script>
+
+	</head>
+
+	<body ng-controller="myCtrl">
+		<!--
+			注意点：当我们使用ngoptions时select必须加上我们的ng-model，否则没有效果
+			如果添加一个option则代表初始值
+		-->
+		<select ng-model="selectName" ng-options="x for (x,y) in names">
+			<option value="">(blank)</option>
+		</select>
+		<script type="text/javascript">
+			var myApp = angular.module('myApp',[]);
+			myApp.controller('myCtrl',['$scope',function($scope){
+				$scope.names = [
+					{name:"1609",age:'18'},
+					{name:"1610",age:'17'},
+					{name:"1611",age:'16'},
+					{name:"1612",age:'15'},
+					{name:"1613",age:'14'},
+				];
+			}])
+			
+			
+		</script>
+		
+	</body>
+
+</html>

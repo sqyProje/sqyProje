@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app>
+
+<head>
+    <meta charset="utf-8">
+    <!-- SEO  -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- 苹果专用 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 简单移动端适配 -->
+   	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!-- 图标 -->
+	<link rel="shortcut icon" href="">
+    
+    <title>模板</title>
+    <link rel="stylesheet" href="">
+    <script type="text/javascript" src="js/angular.min.js" ></script>
+    
+</head>
+
+<body>
+
+    <input type="text" ng-blur="count=count+1" ng-init="count=0" placeholder="这是一个失去焦点的测试" onblur="cusBlur()"/>
+	<hr />
+	当前失去焦点的次数为：{{count}}
+	<script type="text/javascript">
+		function cusBlur(){
+			console.log("我失身了！");
+		}
+		
+	</script>
+   
+</body>
+
+</html>

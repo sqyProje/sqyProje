@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <!-- SEO  -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- 苹果专用 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 简单移动端适配 -->
+   	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!-- 图标 -->
+	<link rel="shortcut icon" href="">
+    
+    <title>模板</title>
+    <link rel="stylesheet" href="">
+    <script type="text/javascript" src="js/angular.min.js" ></script>
+    <script type="text/javascript" src="js/angular-sanitize.min.js" ></script>
+    
+</head>
+
+<body>
+	<div ng-controller="myCtrl">
+		<div ng-bind-html="myText"></div>
+	</div>
+	<!--
+		1.需要添加js文件 -- angular-sanitize.min.js
+		2.我们需要添加依赖['ngSanitize']
+		
+	-->
+   
+    <script type="text/javascript">
+    	var myApp = angular.module('myApp',['ngSanitize']);
+    	myApp.controller('myCtrl',['$scope',function($scope){
+    		//注意不能使用this关键字
+    		var that = $scope;
+    		that.data= [
+    			{"name":"1609","age":"18"},
+    			{"name":"老王","age":"36"},
+    			{"name":"老宋","age":"16"},
+    		];
+    		$scope.myText = "<h1>世界你好！我是1609</h1><h3>I Love U 世界！</h3>";
+    		for(var i=0;i<that.data.length;i++){
+    			$scope.myText += "<div>"+ that.data[i].name +"</div>";
+    		}
+    	}])
+    	
+    	
+    </script>
+</body>
+
+</html>

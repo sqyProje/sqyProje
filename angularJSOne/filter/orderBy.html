@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <!-- SEO  -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- 苹果专用 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 简单移动端适配 -->
+   	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!-- 图标 -->
+	<link rel="shortcut icon" href="">
+    
+    <title>模板</title>
+    <link rel="stylesheet" href="">
+    <!-- 最新的1.5.X -->
+    <script type="text/javascript" src="../angular.min.js" ></script>
+    
+</head>
+
+<body>
+	<div ng-controller="myCtrl">
+		<table>
+			<tr>
+				<th ng-click="">姓名</th>
+				<th ng-click="">电话号码</th>
+				<th ng-click="">年龄</th>
+			</tr>
+			<tr ng-repeat="people in peoples | orderBy:'name'">
+				<td>{{people.name}}</td>
+				<td>{{people.phone}}</td>
+				<td>{{people.age}}</td>
+			</tr>
+			
+		</table>
+	</div>
+	
+    <script type="text/javascript">
+    	var myApp = angular.module('myApp',[]);
+    	myApp.controller('myCtrl',['$scope',function($scope){
+    		$scope.peoples= [
+    			{name:"张三",phone:"123456",age:18},
+    			{name:"李四",phone:"123456",age:18},
+    			{name:"王五",phone:"123456",age:18},
+    			{name:"赵六",phone:"123456",age:18},
+    			{name:"宋妈",phone:"123456",age:18},
+    			{name:"宝宝",phone:"123456",age:18},
+    		];
+    	}])
+    	
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <!-- SEO  -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- 苹果专用 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 简单移动端适配 -->
+   	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!-- 图标 -->
+	<link rel="shortcut icon" href="">
+    
+    <title>模板</title>
+    <link rel="stylesheet" href="">
+    <script type="text/javascript" src="../js/angular.min.js" ></script>
+    
+</head>
+
+<body>
+	<div ng-controller="myCtrl">
+		{{name | uppercase}}
+		<hr />
+		{{name1 | lowercase}}
+		<hr />
+		{{ (name1 + name) | uppercase}}
+	<hr />
+	<br />
+	<br />
+    <ul>
+    	<li ng-repeat="x in data | orderBy : '-age'">{{x.name}}</li>
+    </ul>
+    
+    </div>
+    <script type="text/javascript">
+    	var myApp = angular.module('myApp',[]);
+    	myApp.controller('myCtrl',['$scope',function($scope){
+    		$scope.name = "1609kjin";
+    		$scope.name1 = "JJDJDJDJDJDDJDJDJDJDJ"; 
+    		$scope.data = [
+    			{name:"张三",age:30},
+    			{name:"李四",age:20},
+    			{name:"王五",age:18},
+    			{name:"赵六",age:22},
+    			{name:"杨斌",age:10},
+    			{name:"老宋",age:24},
+    		];
+    	}])
+    	
+    </script>
+</body>
+
+</html>
