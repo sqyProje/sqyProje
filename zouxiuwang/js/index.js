@@ -80,7 +80,7 @@ window.onload = function(){
 	    autoplayDisableOnInteraction : false,
   	});
 
-	//购物车
+	//购物车代码
 	var flag = true;//优化弹窗提醒
 	$('#main')[0].addEventListener("click",function(e){
 		if(e.target && e.target.nodeName == "A" && flag){
