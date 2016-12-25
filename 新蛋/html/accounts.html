@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/acconts.css">
+    <script src="http://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../js/account.js"></script>
+    <script src="../js/cookie.js"></script>
+</head>
+<body>
+
+<div class="prelative  headerwraper">
+    <div class="wraper header">
+        <div class="fr f_gray mt10">
+            <div class="tr lh22 vm">
+                <span class="topnav">
+                    <span class="userpanel  fl mr10">
+                        <span id="spWelcome" class="welcome ml10 vm">
+                            <span class="profile"><span class="blue  regis-1">登录</span></span>　　
+                            下午好,欢迎来新蛋购物！<a href="javascript:;">安全退出</a></span>
+                    </span>
+                </span>
+                <img class="vm" src="../image/tel-phone.jpg" alt="">
+            </div>
+            <div class="mt10 right">江浙沪部分地区79元包邮，全国部分地区199元包邮。<a class="funcLink" href="javascript:;" target="_blank">查看详情</a></div>
+        </div>
+        <div><a href=""><img src="../image/logo.png" alt=""></a></div>
+    </div>
+
+    <div class="pabsolute stepmarkarea" style="width:711px;">
+        <div class="stepmark fl currentstep">
+            <span></span><div>购物车</div>
+        </div>
+        <div class="stepmark fl ">
+            <span class="span2"></span><div>确认订单</div>
+        </div>
+        <div class="stepmark fl">
+            <span></span><div>提交成功</div>
+        </div>
+    </div>
+</div>
+<div class="bg_gray">
+    <div class="content">
+        <div class="ctnerT" id="1">
+            <h3>  选择收货地址</h3>
+            <ins>(您最多可保存5个收货地址)</ins>
+        </div>
+        <div class="address">
+           <input class="radio" type="radio" ><span>完善地址信息</span>
+            <div class="detail">
+                 <dl>
+                     <dt>　　收货人：</dt>
+                     <dd><input type="text"><span >*</span></dd>
+                 </dl>
+                <dl>
+                    <dt>　　　手机：</dt>
+                    <dd><input class="tel" type="text" maxlength="11"><span class="tips">*</span></dd>
+                </dl>
+
+                <dl>
+                    <dt>　　　地区：</dt>
+                    <dd><input type="text"><span>*</span></dd>
+                </dl>
+                <dl>
+                    <dt>　联系地址：</dt>
+                    <dd><select id="region" class="cmnSelect" >
+                        <option value="-1">请选择省份</option>
+                        <option value="2621">上海市</option>
+                        <option value="1591">江苏省</option>
+                        <option value="3225">浙江省</option>
+                        <option value="1">安徽省</option>
+                        <option value="131">北京市</option>
+                        <option value="201">福建省</option>
+                        <option value="299">甘肃省</option>
+                        <option value="403">广东省</option>
+                        <option value="556">广西壮族自治区</option>
+                        <option value="693">贵州省</option>
+                        <option value="789">海南省</option>
+                        <option value="814">河北省</option>
+                        <option value="1144">河南省</option>
+                        <option value="999">黑龙江省</option>
+                        <option value="1323">湖北省</option>
+                        <option value="1454">湖南省</option>
+                        <option value="1830">吉林省</option>
+                        <option value="1718">江西省</option>
+                        <option value="1900">辽宁省</option>
+                        <option value="2016">内蒙古自治区</option>
+                        <option value="2130">宁夏回族自治区</option>
+                        <option value="2160">青海省</option>
+                        <option value="2329">山东省</option>
+                        <option value="2490">山西省</option>
+                        <option value="2212">陕西省</option>
+                        <option value="2652">四川省</option>
+                        <option value="2858">天津市</option>
+                        <option value="2996">西藏自治区</option>
+                        <option value="2878">新疆维吾尔自治区</option>
+                        <option value="3077">云南省</option>
+                        <option value="158">重庆市</option>
+                    </select>
+
+                    <select name="" id="city">
+                        <option value="">请选择城市</option>
+                    </select>
+                    <select name="" id="xian">
+                        <option value="">请选择县区</option>
+                    </select>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>　邮政编码：</dt>
+                    <dd><input  class=code type="text"  maxlength="6"><span class="tip-2">*</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="ctnerT" id="2">
+            <h3>  选择收货地址</h3>
+        </div>
+        <div class="ctnerBody">
+            <div class="account-tips">
+                    <p><strong>特别说明：</strong>受国家航空管制影响，电池、液体、清洁剂、易燃易爆物等产品无法进行空运，新蛋可能会根据实际情况改成可以陆运的快递方式。若造成一定延误，请谅解。
+                    </p>
+                </div>
+            <p><span class="span-1">商品名称</span><span>发货仓</span><span>数量</span><span>小计</span><span class="span-2">配送方式</span><span>运费</span></p>
+            <div class="cont">
+                  <div class="cont-1">
+                      <p class="p1"><span><strong>商家：中国新蛋网</strong></span><a href="javascript:;">[返回购物车]</a></p>
+                      <p class="p2"><span><a href="javascript:;">Bear 小熊 DDZ-125TA 微电脑防烫隔水电炖盅炖锅 一锅四胆 2.5L</a> </span><span>商贸仓</span><span class="num"></span><i>￥</i><span class="all-money"></span></p>
+                      <p class="p3"><input type="radio"> 需要发票</p>
+                 </div>
+                  <div class="cont-2">
+                      <select name="" id="">
+                          <option value="">中通快递</option>
+                          <option value="">EMS邮政速递</option>
+                          <option value="">中国邮政普包</option>
+                      </select>
+                      <div>若订单中含有清洁剂，请勿使用EMS或者普包。</div>
+                  </div>
+                  <div class="cont-3">
+                      <span>￥44.00</span>
+                  </div>
+
+            </div>
+            <div  id="own">
+                <div class="ctnerT all-own">
+                    <h3>  您可以使用下列方式抵扣订单金额</h3>
+                    <p><a href="javascript:;">使用我的新蛋</a></p>
+                    <p><a href="javascript:;">使用积分抵扣</a></p>
+                    <p><a href="javascript:;">使用礼品卡</a></p>
+                </div>
+               <div class="account">
+                   <p>最终订单金额</p>
+                   <p>商品金额：<i>￥</i><span class="have"></span></p>
+                   <p>运费：<span> ￥44.00</span></p>
+                   <p class="acc"><a href="javascript:;">提交订单</a></p>
+               </div>
+          </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="foot">
+    <p class="cont1">
+        <a class=" item1" href="javascript:;"></a>
+        <a class=" item2" href="javascript:;"></a>
+        <a class=" item3" href="javascript:;"></a>
+        <a class=" item4" href="javascript:;"></a>
+        <a class=" item5" href="javascript:;"></a>
+    </p>
+
+    <p class="cont2"><a href="javascript:;">返回首页</a><a href="javascript:;">帮助中心</a><a href="javascript:;">我的新蛋</a><a
+            href="javascript:;">我的购物车</a>
+    </p>
+    <p class="cont3"><a href="javascript:;">© 2001-2016 新蛋商贸（上海）有限公司 版权所有</a></p>
+</div>
+</body>
+</html>

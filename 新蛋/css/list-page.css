@@ -1,0 +1,340 @@
+
+.details{
+    position:absolute;
+    top:-590px;
+    left:0;
+    z-index:1000;
+    background:#fff;
+}
+#list{
+    width:100%;
+    height:40px;
+    background:#efefef;
+}
+#list .details-title{
+    width:460px;
+    height:40px;
+    line-height:40px;
+    margin:0 auto;
+}
+#entery{
+    width:1200px;
+    height:800px;
+    margin:0 auto;
+}
+#right{
+    width:177px;
+
+    float:left;
+    position: relative;
+}
+#left{
+    width:1008px;
+    height:800px;
+
+    float:right;
+}
+#bag dl{
+    height:100px;
+    border:1px solid #FBB989;
+}
+#bag dt {
+    padding-left: 10px;
+    width: 165px;
+    background: #ffdc93;
+    height: 30px;
+    line-height: 30px;
+    font-size:16px;
+    font-weight:bolder;
+    color:#845400
+}
+#bag dd span{
+    float:right;
+    margin-right:5px;
+    display: inline-block;
+}
+#bag dd{
+    height:30px;
+    line-height:30px;
+    position:relative;
+    background: #F0E2C2;
+    padding-left: 34px;
+    padding-bottom: 6px;
+    cursor: default;
+    font-size:14px;
+    color: #845400;
+}
+#bag dl .active{
+    border-bottom:1px solid #FBB989;
+}
+.baglist {
+    width:316px;
+    background:#fff;
+    border:2px solid #FBB989;
+    display:none;
+    z-index: 1000;
+}
+.bagbag2{
+    position:absolute;
+    left:100px;
+    top:0px;
+
+}
+.bagbag3{
+    position:absolute;
+    left:100px;
+    top:00px;
+
+}
+.baglist li{
+    width:150px;
+    padding-left:5px;
+    float:left;
+    list-style:inside;
+}
+.baglist li a{
+    color: #845400;
+    font-weight:normal;
+    display:inline-block;
+}
+.baglist li:hover {
+    background:#efefef;
+}
+#bag   .hover{
+    display:block;
+}
+#bag  dl .ddhover{
+    background: #fde7c7;
+    font-weight:bolder;
+}
+.control-title li {
+    float:left;
+    padding:5px 26px;
+    border:1px solid #b7b7b7;
+    border-left:none;
+    background:#efefef;
+}
+#control h3{
+    line-height:30px;
+    background: #ffdc93;
+    padding-left:7px;
+    border-bottom:2px solid #f60;
+}
+#control {
+    position:relative;
+}
+#control ul {
+    overflow:hidden;
+}
+#control  .details-infomation{
+    position:absolute;
+    top:62px;
+    left:0px;
+    border:1px solid #b7b7b7;
+    border-bottom: none;
+    display:none;
+}
+#control .active{
+    display:block;
+
+}
+.cont-item .item-img{
+    width:40px;
+    margin-right:10px;
+    float:left;
+}
+.item-img  span {
+    display:inline-block;
+    width:35px;
+    background: #f60;
+    line-height: 20px;
+    color:#fff;
+    text-align:center;
+    margin-left: 5px;;
+}
+#control .first{
+    float:right;
+    width:120px;
+    overflow: hidden;
+}
+#right .control-content{
+    width:177px;
+    height:70px;
+    margin-top: 10px;
+
+    border-bottom:1px solid #b7b7b7;
+}
+#control .first .details-title{
+    float:left;
+    height: 40px;
+    overflow: hidden;
+}
+#control .first p a:hover{
+    text-decoration:underline;
+}
+#control .first .details-span{
+    display:inline-block;
+    color:#f60;
+    font-weight:bolder;
+}
+.control-title  ul .active{
+    background:#fff;
+    border-bottom:none;
+    border-right:none;
+}
+.details-bottom{
+    width:178px;
+    height:303px;
+    border:1px solid #b7b7b7;
+    position:absolute;
+    top:580px
+}
+.details-bottom h3{
+    color:#f45400;
+    padding:5px 0 15px 5px;
+}
+.bottom-titile p{
+    font-weight:bolder;
+    color:#3e3e3e;
+    margin: 5px 10px;
+}
+.bottom-list {
+    margin: 10px;
+}
+.bottom-list input{
+    border-radius: 50%;;
+}
+.details-last{
+    border-top:1px solid #b7b7b7;
+    background:#efefef;
+    padding-top: 10px;
+}
+.details-last span{
+    display:inline-block;
+    width:35px;
+    height: 25px;
+    line-height:25px;
+    background: #f60;
+    margin-left: 50px;
+    color:#fff;
+    text-align:center;
+    margin-bottom: 5px;
+}
+.details-last a:hover{
+    text-decoration: underline;
+}
+.main-content {
+    width: 1008px;
+    margin: 0 auto;
+    height:300px;
+    border:1px solid #ccc;
+    overflow: hidden;
+}
+.main-content .hack-brand {
+    margin: 20px 25px 0 25px;
+}
+.beam-content li {
+    margin: 0 10px 0 20px;
+    float: left;
+}
+.main-content .beam-content .brand-title {
+    padding: 0 10px;
+    width: 180px;
+}
+.beam-content .title {
+    width: 150px;
+    height: 36px;
+    word-break: break-all;
+    margin: 5px auto 3px;
+    overflow: hidden;
+}
+.hack-brand {
+    position: relative;
+}
+.priceline {
+    padding-left: 10px;
+    padding-top: 40px;
+}
+.priceline span {
+    float: left;
+    color: #ff6600;
+    font-weight: bolder;
+}
+.main-content{
+    /*position:relative;*/
+}
+.main-content .beam-content{
+    position:absolute;
+    /*top:30px;*/
+    left:240px;
+    display:none;
+    overflow: hidden;
+}
+.main-content .crazy-content{
+    display:block;
+}
+.main-content .crazy{
+    height:40px;
+    width:100%;
+    background: #fdf6dc;
+    border-bottom:1px solid #cccccc;
+}
+.main-content .crazy-span{
+    padding:10px  0 0 10px;
+}
+.main-content .crazy-span span{
+    display: inline-block;
+    padding:5px 10px 5px 10px;
+    font-weight:bolder;
+    background: #f2f3f3;;
+    border:1px solid #cccccc;
+    border-bottom:none;
+}
+.main-content .crazy-span .active{
+    background: #fff;
+    border-bottom:2px solid #FFFFFF;
+}
+#left #left-last{
+    width:100%;
+    margin-top:10px;
+}
+#left-last h3{
+    float:left;
+    padding-left:50px;;
+    font-size:20px;
+    margin-bottom: 20px;
+    color:#845400;
+    background:url(../image/small2.gif) no-repeat 10px -589px;
+}
+#left-last .control-content{
+/width:170px;
+    /*margin-left: 30px;*/
+    border-bottom: none;
+    float:left;
+    margin-bottom:50px;
+}
+#left-last .cont-item{
+    width:500px;
+
+    float:left;
+}
+#left-last .item-img{
+
+    width:130px;
+    height: 120px;
+}
+
+#left-last .cont-item .details-title{
+    margin-bottom:70px;
+    line-height: 20px;
+    margin-right:20px;
+}
+.last-title .last-dash{
+    margin-top: 20px;;
+    float:right;
+    width:870px ;
+    border: 1px dashed #efefef;
+}
+.left-content a:hover{
+    text-decoration:underline;
+}

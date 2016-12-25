@@ -1,0 +1,170 @@
+ 
+.top {
+    overflow: hidden;
+}
+.top .wrapper {
+    margin-bottom: 18px;
+    padding-top: 20px;
+}
+
+#logo{
+    width:100%;
+    height:485px;
+    margin-bottom:80px;
+    background: #e3e3e3;;
+}
+#content{
+    width:980px;
+    margin:50px  auto;
+}
+.logo-left {
+    width:500px;
+    margin-right: 80px;
+}
+.logoin_r {
+    background: #FFF;
+    border: 1px solid #CCC;
+    float: left;
+    padding: 20px 0;
+    width: 380px;
+
+}
+.logoin_r_c1 {
+
+    padding: 0 25px 15px 30px;
+}
+.logoin_title {
+    height: 21px;
+    margin-bottom: 23px;
+}
+.logoin_title  h2{
+    display: inline;
+}
+.fr {
+    float: right;
+
+}
+.fr a{
+    color: blue;
+}
+.logoin_form ul{
+    width:250px;
+    margin: 0 auto;
+}
+.logoin_form li {
+    float: none;
+    text-align: center;
+
+}
+
+.username li em{
+    height:20px;
+    display:block;
+    width:250px;
+    color:#ff2810;
+}
+.username input{
+    width:280px;
+    height:26px;
+    margin-right:10px;
+}
+.username .wrong{
+    font-style: normal;
+}
+.username_icon{
+    width: 30px;
+    height: 33px;
+    display: inline-block;
+    background-position: 0 0;
+    vertical-align: middle;
+}
+.user-name{
+    background: url(../image/login_user.png);
+}
+.user-pass{
+    background: url(../image/login_user.png) 0px -60px;
+}
+.DefaultText {
+    color: #b7b7b7;
+}
+.safe-forget{
+    overflow: hidden;
+}
+.safe-forget a{
+    color: blue;
+    display: inline-block;
+
+}
+.safe{
+    float:right;
+}
+.forget{
+    float:left;
+}
+.right-away{
+    display: inline-block;
+    width:150px;
+    height:35px;
+    line-height: 35px;
+    text-align: center;
+    margin-left:80px;
+    background: #f60;
+    border-radius:5%;
+}
+
+.logoin_r_c2 {
+    color: #666;
+    padding: 16px 25px 0 30px;
+    overflow: hidden;
+    zoom: 1;
+}
+.logoin_r_c2 .other {
+    width: 300px;
+
+}
+.other dt{
+
+    margin-bottom: 5px;
+}
+.other dd {
+    float: left;
+    height: 30px;
+    width: 80px;
+
+}
+.other dd a{
+    display: inline-block;
+    /*width:70px;*/
+    margin-left: 30px;
+    height: 30px;
+
+
+}
+.other  .d1{
+    background: url(../image/logo-jgf.png) no-repeat  0 0px;
+}
+.other  .d2{
+    background: url(../image/logo-jgf.png) no-repeat  0 -44px;
+}
+.other  .d3{
+    background: url(../image/logo-jgf.png) no-repeat  0 -97px;
+}
+.other  .d4{
+    background: url(../image/logo-jgf.png) no-repeat  0 -129px;
+}
+.other  .d5{
+    background: url(../image/logo-jgf.png) no-repeat  0 -160px;
+}
+.other  .d6{
+    background: url(../image/logo-jgf.png) no-repeat  0 -97px;
+}
+.other  .d7{
+    background: url(../image/logo-jgf.png) no-repeat  0 -44px;
+}
+
+.other  .d8{
+    width:130px;
+    background: url(../image/logo-jgf.png) no-repeat  0 0px;
+}
+
+

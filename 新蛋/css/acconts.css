@@ -1,0 +1,355 @@
+p,li,ul, body{
+    margin: 0;
+    padding:0;
+}
+body{
+    font-family: " tahoma";
+}
+.headerwraper {
+    padding-top: 20px;
+    margin-bottom: 50px;
+    position: relative;
+    font-size:12px;
+    width:1200px;
+
+}
+
+div.wraper {
+    width: 980px;
+    margin:0 auto;
+}
+
+
+.fr {
+    float: right;
+    display: inline;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.vm {
+    vertical-align: middle;
+}
+.tr {
+    text-align: right;
+}
+.topnav {
+    position: relative;
+}
+.fl {
+    float: left;
+    display: inline;
+}
+.mr10 {
+    margin-right: 10px;
+}
+.welcome {
+    display: inline-block;
+}
+.vm {
+    vertical-align: middle;
+}
+.ml10 {
+    margin-left: 10px;
+}
+img {
+    border: none;
+}
+.right {
+    text-align: right!important;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+.mt10  a:hover{
+    text-decoration:underline;
+}
+.stepmarkarea {
+    left: 50%;
+    margin-left: -357px;
+    height: 60px;
+    z-index: 10;
+    top: 122px;
+}
+.pabsolute {
+    position: absolute;
+}
+.stepmark {
+    width: 237px;
+    text-align: center;
+}
+.fl {
+    float: left;
+    display: inline;
+}
+.stepmark span {
+    background: url(../image/market-quan.jpg) no-repeat  0 -19px;
+    display: block;
+    vertical-align: middle;
+    height: 19px;
+    width: 28px;
+    margin: 5px auto 12px auto;
+}
+.stepmark .span2{
+    background: url(../image/market-quan.jpg) no-repeat  0 0px;
+}
+.stepmarkarea .currentstep div {
+    color: #000;
+}
+.stepmarkarea .stepmark div {
+    text-align: center;
+    color: #666;
+    font-family: '微软雅黑';
+}
+.bg_gray {
+    border-top: 1px solid #ededed;
+    height: 100%;
+    position: relative;
+}
+i ,em{
+    font-style:normal;
+    font-weight:bolder;
+    font-size:12px;
+}
+.content{
+    width: 980px;
+    /*height:500px;*/
+    /*border:1px solid  #d9d9d9;*/
+    margin: 100px auto;
+}
+
+.ctnerT {
+    height: 50px;
+    background:url(../image/account-xian.gif) repeat-x 0 40px;
+    clear: both;
+    position:relative;
+}
+.ctnerT h3{
+    line-height: 30px;
+    font-size: 14px;
+    color: #843D14;
+    float: left;
+    background: #FFF;
+    padding: 0px 10px 0px 0;
+    margin-top: 17px;
+}
+.ctnerT ins {
+    padding: 13px 10px 0 0;
+    color: #4F9DE7;
+    position:absolute;
+    top:8px;
+    left:100px;
+}
+.address span{
+
+    font-size:12px;
+}
+.address  .radio {
+    margin-right:10px;
+}
+.detail {
+    background: #FFFDCF;
+    padding: 0 10px 10px 10px;
+    border: 1px solid #D6D6B4;
+    /*display: none;*/
+    overflow: hidden;
+
+}
+.detail dl{
+    height:30px;
+}
+.detail dl span{
+    color:red;
+}
+.detail dt{
+    display:inline-block;
+    /*padding:0 20px;;*/
+
+
+}
+.detail dd{
+    display:inline-block;
+    margin-left: 10px;;
+}
+.ctnerBody {
+    border-top: 2px solid #F56833;
+}
+.account-tips {
+    border: 1px solid #f60;
+    background-color: #fff4e5;
+    color: #f60;
+    padding: 5px 10px;
+    font-weight: normal;
+    font-size: 12px;
+    overflow: hidden;
+    zoom: 1;
+}
+.ctnerBody span{
+    display: inline-block;
+    margin-right:40px;
+    font-size: 12px;
+    font-weight:bolder;
+}
+.ctnerBody .span-1{
+    width:300px;
+    margin-left:30px;
+} .ctnerBody .span-2{
+      width:260px;
+  }
+.cont{
+    width:980px;
+    height:105px;
+    border:1px solid #FFE6DB;
+}
+.cont .cont-1{
+    width:560px;
+    float:left;
+    overflow: hidden;
+    height:104px;
+}
+.cont-1  p{
+
+    font-size: 12px;
+}
+.cont-1  .p1{
+    background:#FFE6DB  url(../image/account-logo.gif) no-repeat 10px -2072px;
+}
+.cont-1  p a{
+    color: #4F9DE7;
+}
+.cont-1  p a:hover{
+    color:#ff2810;
+}
+.cont-1  .p1   span{
+    /*padding: 5px;*/
+    padding: 5px 300px 5px 30px;
+    font-weight: bold;
+    display: inline-block;
+    border-top: none;
+}
+.cont-1  .p2 {
+    height:50px;
+    background: #ffffff;
+}
+.cont-1  .p2 a{
+    display:inline-block;
+    width:300px;
+    margin-top: 20px;
+}
+.cont-1  .p2 span{
+    margin: 0 20px;
+    font-weight: normal;
+}
+.cont-1  .p2 i{
+    margin-left:30px;
+}
+.cont-1  .p2 .all-money{
+    margin: 0 0px;
+    font-weight: normal;
+}
+.cont-1 .p3{
+    background:#FFE6DB;
+    line-height:30px;
+}
+.cont .cont-2{
+    width:300px;
+    float:left;
+    height:104px;
+    border:1px solid #FFE6DB;
+    overflow: hidden;
+
+}
+.cont .cont-2 div{
+    font-size:12px;
+    margin-top:30px;
+}
+.cont .cont-3{
+    width:116px;
+    float:left;
+    line-height:103px;
+    text-align: center;
+    border-bottom:1px solid #FFE6DB;
+    overflow: hidden;
+    height:104px;
+}
+.foot{
+    width:1200px;
+    margin:50px auto 30px;
+    font-size:12px;
+}
+.foot a{
+    margin-left:10px;
+}
+.foot .cont1{
+    overflow: hidden;
+    height:60px;
+    padding-left: 300px;
+    padding-right: 250px;
+}
+.foot .cont1 a {
+    display:inline-block;
+    width:120px;
+    height:50px;
+    float:left;
+}
+.foot .cont2{
+    padding-left: 500px;
+    padding-right: 200px;
+}
+.foot .cont3{
+    padding-left:500px;
+}
+
+.foot .item1{
+    background: url(../image/foot.png) no-repeat  0  0;
+}
+.foot .item2{
+    background: url(../image/foot.png) no-repeat  0 -45px;
+}
+.foot .item3{
+    background: url(../image/foot.png) no-repeat  0  -90px;
+}
+.foot .item4{
+    background: url(../image/foot.png) no-repeat  0  -135px;
+}
+.foot .item5{
+    background: url(../image/foot.png) no-repeat  0 -180px;
+}
+#own{
+    width:980px;
+    height:100px;
+    border:1px solid #FFE6DB;
+}
+.account{
+    width:200px;
+    height:100px;
+    background: #FFE6DB;
+    float:right;
+
+}
+.all-own{
+    float:left;
+}
+.all-own a{
+    font-size: 12px;
+    color:#00afff;
+}
+.all-own a:hover {
+    color: #ff2810;
+}
+.account p{
+    margin-left: 30px;
+}
+.account .acc{
+    width:100px;
+    height:30px;
+    background: #d9d9d9;
+    line-height:30px;
+    text-align:center;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.account .acc a{
+    font-weight: bolder;
+}

@@ -1,0 +1,316 @@
+p,li,ul, body{
+    margin: 0;
+    padding:0;
+}
+body{
+    font-family: " tahoma";
+}
+.headerwraper {
+    padding-top: 20px;
+    margin-bottom: 50px;
+    position: relative;
+    font-size:12px;
+    width:1200px;
+}
+
+div.wraper {
+    width: 980px;
+    margin:0 auto;
+}
+
+
+.fr {
+    float: right;
+    display: inline;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.vm {
+    vertical-align: middle;
+}
+.tr {
+    text-align: right;
+}
+.topnav {
+    position: relative;
+}
+.fl {
+    float: left;
+    display: inline;
+}
+.mr10 {
+    margin-right: 10px;
+}
+.welcome {
+    display: inline-block;
+}
+.vm {
+    vertical-align: middle;
+}
+.ml10 {
+    margin-left: 10px;
+}
+img {
+    border: none;
+}
+.right {
+    text-align: right!important;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+.mt10  a:hover{
+    text-decoration:underline;
+}
+.stepmarkarea {
+    left: 50%;
+    margin-left: -357px;
+    height: 60px;
+    z-index: 10;
+    top: 122px;
+}
+.pabsolute {
+    position: absolute;
+}
+.stepmark {
+    width: 237px;
+    text-align: center;
+}
+.fl {
+    float: left;
+    display: inline;
+}
+.stepmark span {
+    background: url(../image/market-quan.jpg) no-repeat  0 -19px;
+    display: block;
+    vertical-align: middle;
+    height: 19px;
+    width: 28px;
+    margin: 5px auto 12px auto;
+}
+.stepmark .span1{
+    background: url(../image/market-quan.jpg) no-repeat  0 0px;
+}
+.stepmarkarea .currentstep div {
+    color: #000;
+}
+
+.stepmarkarea .stepmark div {
+    text-align: center;
+    color: #666;
+    font-family: '微软雅黑';
+}
+.bg_gray {
+    border-top: 1px solid #ededed;
+    height: 100%;
+    position: relative;
+}
+
+
+.wrapper {
+    width:980px;
+    border:1px solid #d9d9d9;
+    margin:70px auto 20px;
+}
+.content-1 .title{
+    border-bottom: 1px solid #d9d9d9;
+    font-size:14px;
+    font-weight:bolder;
+    padding: 8px 0px 0px 20px;
+    height:24px;
+    line-height:24;
+}
+.wrapper .car-0 p{
+    font-size:12px;
+    color:#000;
+    display: inline-block;
+
+}
+.wrapper .car-0 .car-1{
+    margin: 100px 0 100px 100px;
+}
+.car-title{
+    border-bottom:2px solid #d9d9d9;
+}
+.car-title span {
+    display:inline-block;
+    width:100px;
+    height:30px;
+    line-height:30px;
+    padding-left:20px;
+    text-align:center;
+    border-bottom:2px solid #f60
+}
+.hack-brand {
+    margin: 20px ;
+    width:200px;
+    list-style:none;
+    float:left;
+}
+.beam-content .title {
+    width: 180px;
+    height: 33px;
+    word-break: break-all;
+    margin: 5px auto 30px;
+    overflow: hidden;
+    font-size:14px;
+
+}
+.hack-brand p{
+    display:inline-block;
+}
+.hack-brand .img{
+
+}
+.hack-brand .price span {
+    font-size:14px;
+    color: #f60;
+    font-weight:bolder;
+}
+.price a{
+    display:inline-block;
+    width:70px;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+    font-size: 12px;
+    border:1px solid #d9d9d9;
+    color: #000000;
+    margin-left:30px;
+}
+.footer {
+    width:100%;
+    font-size: 10px;
+    padding: 80px 0 30px;
+}
+.footer p {
+    width:600px;
+    margin-left: 500px;
+    padding: 0 0 10px;
+}
+.footer  .footer-p2{
+    margin:0 470px;
+}
+.beam-content{
+    width:980px;
+    height:300px;
+    border:1px solid #d9d9d9;
+}
+.clear-top{
+    padding: 0 10px;
+    height: 40px;
+    background: #f7f5fa;
+    border-bottom: solid 1px #ccc;
+}
+
+.clear-top span{
+    display: inline-block;
+    line-height: 3em;
+}
+
+.col-md-5{
+    width: 41%;
+}
+
+.col-md-2 {
+    width: 16%;
+}
+
+.col-md-1 {
+    width: 8%;
+}
+
+.clear-top .P_left{
+    text-align: left;
+}
+
+.center{
+    text-align: center;
+}
+
+
+.box-all dd{
+    overflow: hidden;
+    padding: 10px;
+    color: #333;
+    border-bottom: dotted 1px #ccc;
+}
+
+.dd-fl div{
+    float: left;
+}
+
+.dd-fl span{
+    display: inline-block;
+    text-align: center;
+}
+
+
+.account-yes{
+    position: relative;
+    min-height: 80px;
+    background: #fdfbf2;
+    line-height: 1.8em;
+}
+
+.account-yes p{
+    padding-bottom: 15px;
+    text-align: right;
+}
+
+.btn-money{
+    background: red;
+    padding: .8% 4%;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: normal;
+    cursor: pointer;
+}
+
+.g-pic img{
+    width: 65px;
+    height: 69px; margin: 1%;
+    float: left;
+}
+.g-info{
+    width: 55%;
+    float: left;
+    padding: .5% 0 0 3%;
+    line-height: 1.8em;
+}
+
+.g-info a{
+    font-size: 10px;
+}
+
+.mx-clear{
+    overflow: hidden;
+    width: 25%;
+}
+
+
+.now-num{
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.num-btn{
+    display: inline-block;
+    width: 20px;
+    border: 1px solid #ddd;
+    line-height: 15px;
+}
+
+.delete{
+    cursor: pointer;
+}
+
+.buy-red{
+    color:red;
+}

@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>详情页</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <script src="http://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../js/base.js"></script>
+    <script src="../js/details-page.js"></script>
+    <script src="../js/cookie.js"></script>
+    <link rel="stylesheet" href="../css/details.css">
+    <style>
+
+    </style>
+</head>
+
+<body class="sw">
+<div id="topbar">
+    <div id="header">
+        <ul class="head-left left">
+            <li class="top1"><a href="javascript:;">掌上新蛋</a></li>
+            <li class="top2"><a href="javascript:;">企业购物</a></li>
+        </ul>
+        <div class="head-right right">
+            <div class="register">
+                <span class="regis-1">登录   |</span>
+                <span class="regis-2">注册</span>
+                <span>下午好，欢迎来新蛋购物!</span>
+            </div>
+            <ul class="login">
+                <li><a href="javascript:;">我的订单</a></li>
+                <li class="open"><a href="javascript:;">我的新蛋</a>
+                    <div id="newEgg"><a href="javascript;;"></a>
+                        <a href="javascript;;">我的订单：0</a>
+                        <a href="javascript;;">我的咨询：0</a>
+                        <a href="javascript;;">我的蛋券：0</a>
+                        <a href="javascript;;">我的评论：0</a>
+                        <a href="javascript;;">我的积分：0</a>
+                        <a href="javascript;;">我的礼品卡</a>
+                    </div>
+                </li>
+                <li><a href="javascript:;">帮助中学</a></li>
+                <li class="service"><a href="javascript:;">客服服务</a>
+                    <div id="serviceCont">
+                        <a href="javascript:;" class="weight">400-500-300</a>
+                        <a href="javascript:;" class="block">400-120000</a>
+                        <a href="javascript:;">每天 9：00-18：00</a>
+                        <span>在线咨询</span>
+                        <span>邮件我们</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="logomin">
+    <div id="logoContent">
+        <div id="logo"><a href="javascript:;"><img src="../image/logo.png" alt=""></a></div>
+        <div id="search">
+            <div class="searCon">
+                <input  class="tx"  type="text" value="大闸蟹">
+                <a href="javascript:;">搜索</a>
+            </div>
+            <p id="leverMenu">
+                <a href="javascript:;">硬盘移动　|</a>
+                <a href="javascript:;">MacBook　|</a>
+                <a href="javascript:;">Mate8 　|</a>
+                <a href="javascript:;">Thinkpad 　|</a>
+                <a href="javascript:;">行车记录仪</a>
+            </p>
+        </div>
+        <div id="logoRight">
+            <a href="javascript;;"><img src="../image/logo-right.gif" alt=""></a>
+        </div>
+    </div>
+
+</div>
+<div id="nav">
+    <div id="navcontent">
+        <div id="menu"  >
+            <h3>全部商品分类 <span>∨</span></h3>
+            <div class="menu-list ">
+                <ul class="details">
+                    <li >
+                        <dl>
+                            <dt>
+                            <div class="title  item1"><a href="javaascript:;">海外直购</a> <span></span></div>
+                            <div class="title-content">
+                                <a href="javascript:;" class="colorred">影音</a><a href="javascript:;">固态硬盘</a><a href="javascript:;">奶粉</a>
+                            </div>
+                            </dt>
+                        </dl>
+                        <dd class="list-content">
+                            <dl>
+                        <dt>数码外设</dt>
+                        <dd>
+                            <a href="javascript:;"  class="colorred">耳机</a>
+                            <a href="javascript:;" class="colorred">电脑外设</a>
+                            <a href="javascript:;" >手机配件</a>
+                            <a href="javascript:;">音响</a>
+                            <a href="javascript:;">网络设备</a>
+                            <a href="javascript:;">办公设备</a>
+                            <a href="javascript:;">U盘/存储卡</a>
+                            <a href="javascript:;">游戏主机及配件</a>
+                            <a href="javascript:;" class="colorred">相机及配件</a>
+                            <a href="javascript:;">解锁版手机</a>
+                        </dd>
+                        </dl>
+                        <dl>
+                            <dt>电脑拼版</dt>
+                            <dd>
+                                <a href="javascript:;" >笔记本电脑</a>
+                                <a href="javascript:;" class="colorred">硬盘存储</a>
+                                <a href="javascript:;">电脑主板</a>
+                                <a href="javascript:;">声卡显示</a>
+                                <a href="javascript:;">笔记本电脑包</a>
+                                <a href="javascript:;" class="colorred">平板设备</a>
+                                <a href="javascript:;">外置硬盘</a>
+                                <a href="javascript:;">固态硬盘</a>
+                                <a href="javascript:;">迷你主机</a>
+                                <a href="javascript:;">散热设备</a>
+                            </dd>
+
+                        </dl>
+                        <dl>
+                            <dt>家用电器</dt>
+                            <dd>
+                                <a href="javascript:;" >厨房电器</a>
+                                <a href="javascript:;">情节电器</a>
+
+                                <a href="javascript:;">个人护理</a>
+                                <a href="javascript:;">口腔清洁</a>
+                                <a href="javascript:;">生活电器</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>生活百货</dt>
+                            <dd>
+                                <a href="javascript:;" >男鞋女鞋</a>
+                                <a href="javascript:;">手表配件</a>
+                                <a href="javascript:;" class="colorred">没装</a>
+                                <a href="javascript:;">太阳眼镜</a>
+                                <a href="javascript:;">服饰</a>
+                                <a href="javascript:;">品牌箱包</a>
+                                <a href="javascript:;">首饰</a>
+                                <a href="javascript:;">汽车主机及配件</a>
+                                <a href="javascript:;">户外用品</a>
+                                <a href="javascript:;">文具/耗材</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>个护美妆</dt>
+                            <dd>
+                                <a href="javascript:;" >面膜</a>
+                                <a href="javascript:;">润肤</a>
+                                <a href="javascript:;">面部彩妆</a>
+                                <a href="javascript:;">洗发水</a>
+                                <a href="javascript:;" class="colorred">个沪情节</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>母婴商品</dt>
+                            <dd>
+                                <a href="javascript:;" >婴儿喂养</a>
+                                <a href="javascript:;">婴儿服饰配件</a>
+                                <a href="javascript:;">西域尿布</a>
+                                <a href="javascript:;" class="colorred">儿童玩局</a>
+                                <a href="javascript:;">安全车&手推车</a>
+                                <a href="javascript:;">办公设备</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>营养保健</dt>
+                            <dd>
+                                <a href="javascript:;" >营养类</a>
+                                <a href="javascript:;">男士保健</a>
+                            </dd>
+                        </dl>
+
+                        <div class="content-right">
+                            <strong>热门品牌</strong>
+                            <p>
+                                <a  class="strong-1" href="javascript:;"></a>
+                                <a class="strong-2" href="javascript:;"></a>
+                                <a class="strong-3" href="javascript:;"></a>
+                                <a class="strong-4" href="javascript:;"></a>
+                                <a class="strong-5" href="javascript:;"></a>
+                                <a class="strong-6" href="javascript:;"></a>
+                            </p>
+                        </div>
+                        </dd>
+                    </li>
+                    <li  >
+                        <dl>
+                            <dt>
+                            <div class="title  item3"><a href="javaascript:;">海外直购</a> <span></span></div>
+                            <div class="title-content">
+                                <a href="javascript:;">影音</a><a href="javascript:;" class="colorred">固态硬盘</a><a href="javascript:;">奶粉</a>
+                            </div>
+                            </dt>
+                        </dl>
+                        <dd class="list-content">
+
+                            <dl>
+                        <dt>电脑整机</dt>
+                        <dd>
+                            <a href="javascript:;" >笔记本</a>
+                            <a href="javascript:;">平板</a>
+                            <a href="javascript:;">台式机</a>
+                            <a href="javascript:;" class="colorred">一体机</a>
+                            <a href="javascript:;">笔记本配件</a>
+                            <a href="javascript:;">拼版配件</a>
+                        </dd>
+                        </dl>
+                        <dl>
+                            <dt>电脑配件</dt>
+                            <dd>
+                                <a href="javascript:;"  class="colorred">CPU</a>
+                                <a href="javascript:;">主板</a>
+                                <a href="javascript:;">显示</a>
+                                <a href="javascript:;">硬盘</a>
+                                <a href="javascript:;">SSD固态银盘</a>
+                                <a href="javascript:;" class="colorred">内存</a>
+                                <a href="javascript:;">机箱</a>
+                                <a href="javascript:;">电源</a>
+                                <a href="javascript:;">显示器</a>
+                                <a href="javascript:;" class="colorred">散热器</a>
+                            </dd>
+
+                        </dl>
+                        <dl>
+                            <dt>电脑爱外设</dt>
+                            <dd>
+                                <a href="javascript:;" >键盘</a>
+
+                                <a href="javascript:;">鼠标</a>
+
+                                <a href="javascript:;">U盘</a>
+                                <a href="javascript:;">移动硬盘</a>
+                                <a href="javascript:;" class="colorred">存储卡</a>
+                                <a href="javascript:;">读卡器</a>
+                                <a href="javascript:;">手板绘</a>
+                                <a href="javascript:;">创作</a>
+                                <a href="javascript:;">附件</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>网络设备</dt>
+                            <dd>
+                                <a href="javascript:;" >路由器</a>
+                                <a href="javascript:;">网卡</a>
+                                <a href="javascript:;">交换机</a>
+                                <a href="javascript:;" class="colorred">网络配件</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>音频设备</dt>
+                            <dd>
+                                <a href="javascript:;" >耳麦</a>
+                                <a href="javascript:;">音响</a>
+                                <a href="javascript:;">声卡</a>
+                                <a href="javascript:;">音响</a>
+                                <a href="javascript:;">蓝牙耳机</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>打印耗材</dt>
+                            <dd>
+                                <a href="javascript:;" class="colorred">磨合</a>
+                                <a href="javascript:;">墨粉</a>
+
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>智能穿戴</dt>
+                            <dd>
+                                <a href="javascript:;" >智能穿戴设备</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>游戏外设</dt>
+                            <dd>
+                                <a href="javascript:;" >游戏机</a>
+                                <a href="javascript:;">游戏手并</a>
+                                <a href="javascript:;">手机配件</a>
+                                <a href="javascript:;"class="colorred">游戏周边</a>
+                                <a href="javascript:;">智能VR眼睛</a>
+                            </dd>
+                        </dl>
+
+                        <div class="content-right">
+                            <strong>热门品牌</strong>
+                            <p>
+                                <a  class="strong-1" href="javascript:;"></a>
+                                <a class="strong-2" href="javascript:;"></a>
+                                <a class="strong-3" href="javascript:;"></a>
+                                <a class="strong-4" href="javascript:;"></a>
+                                <a class="strong-5" href="javascript:;"></a>
+                                <a class="strong-6" href="javascript:;"></a>
+                            </p>
+                        </div>
+                        </dd>
+                    </li>
+                    <li >
+                        <dl>
+                            <dt>
+                            <div class="title item2"><a href="javaascript:;">海外直购</a> <span></span></div>
+                            <div class="title-content">
+                                <a href="javascript:;">影音</a><a href="javascript:;">固态硬盘</a><a href="javascript:;">奶粉</a>
+                            </div>
+                            </dt>
+                        </dl>
+                        <dd class="list-content">
+
+                            <dl>
+                        <dt>数码外设</dt>
+                        <dd>
+                            <a href="javascript:;" >耳机</a>
+
+                            <a href="javascript:;">电脑外设</a>
+
+                            <a href="javascript:;">手机配件</a>
+                            <a href="javascript:;">音响</a>
+                            <a href="javascript:;">网络设备</a>
+                            <a href="javascript:;">办公设备</a>
+                            <a href="javascript:;">U盘/存储卡</a>
+                            <a href="javascript:;">游戏主机及配件</a>
+                            <a href="javascript:;">相机及配件</a>
+                            <a href="javascript:;">解锁版手机</a>
+                        </dd>
+                        </dl>
+                        <dl>
+                            <dt>数码外设</dt>
+                            <dd>
+                                <a href="javascript:;" >耳机</a>
+                                <a href="javascript:;">电脑外设</a>
+                                <a href="javascript:;">手机配件</a>
+                                <a href="javascript:;">音响</a>
+                                <a href="javascript:;">网络设备</a>
+                                <a href="javascript:;">办公设备</a>
+                                <a href="javascript:;">U盘/存储卡</a>
+                                <a href="javascript:;">游戏主机及配件</a>
+                                <a href="javascript:;">相机及配件</a>
+                                <a href="javascript:;">解锁版手机</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>手机</dt>
+                            <dd>
+                                <a href="javascript:;" >智能耳机</a>
+                                <a href="javascript:;">非智能手机</a>
+                                <a href="javascript:;" class="colorred">对讲机</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>苹果专区</dt>
+                            <dd>
+                                <a href="javascript:;" >iphone</a>
+                                <a href="javascript:;">iPaid</a>
+                                <a href="javascript:;" class="colorred">iPhonee 附件</a>
+                                <a href="javascript:;">Mac附件</a>
+                                <a href="javascript:;" class="colorred">网络设备</a>
+                                <a href="javascript:;">办公设备</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>手机运营</dt>
+                            <dd>
+                                <a href="javascript:;"  class="colorred">上网卡</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>手机配件</dt>
+                            <dd>
+                                <a href="javascript:;" >手机电池/充电器</a>
+                                <a href="javascript:;" class="colorred">手机数据线</a>
+                                <a href="javascript:;">车载手机配件</a>
+                                <a href="javascript:;">手机通用配件</a>
+                                <a href="javascript:;">手机贴膜</a>
+                                <a href="javascript:;" class="colorred">手机保护套</a>
+                                <a href="javascript:;">iPhone附件</a>
+                                <a href="javascript:;" class="colorred">相手机耳机</a>
+                                <a href="javascript:;" class="colorred">蓝牙耳机</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>智能设备</dt>
+                            <dd>
+                                <a href="javascript:;" class="colorred">智能穿戴、设备</a>
+                            </dd>
+                        </dl>
+
+                        <div class="content-right ">
+                            <strong>热门品牌</strong>
+                            <p class="item2">
+                                <a  class="strong-1" href="javascript:;"></a>
+                                <a class="strong-2" href="javascript:;"></a>
+                                <a class="strong-3" href="javascript:;"></a>
+                                <a class="strong-4" href="javascript:;"></a>
+                                <a class="strong-5" href="javascript:;"></a>
+                                <a class="strong-6" href="javascript:;"></a>
+                            </p>
+
+                        </div>
+                        </dd>
+                    </li>
+                    <li  >
+                        <dl>
+                            <dt>
+                            <div class="title  item3"><a href="javaascript:;">海外直购</a> <span></span></div>
+                            <div class="title-content">
+                                <a href="javascript:;">影音</a><a href="javascript:;" class="colorred">固态硬盘</a><a href="javascript:;">奶粉</a>
+                            </div>
+                            </dt>
+                        </dl>
+                        <dd class="list-content">
+
+                            <dl>
+                        <dt>电脑整机</dt>
+                        <dd>
+                            <a href="javascript:;" >笔记本</a>
+                            <a href="javascript:;">平板</a>
+                            <a href="javascript:;">台式机</a>
+                            <a href="javascript:;" class="colorred">一体机</a>
+                            <a href="javascript:;">笔记本配件</a>
+                            <a href="javascript:;">拼版配件</a>
+                        </dd>
+                        </dl>
+                        <dl>
+                            <dt>电脑配件</dt>
+                            <dd>
+                                <a href="javascript:;"  class="colorred">CPU</a>
+                                <a href="javascript:;">主板</a>
+                                <a href="javascript:;">显示</a>
+                                <a href="javascript:;">硬盘</a>
+                                <a href="javascript:;">SSD固态银盘</a>
+                                <a href="javascript:;" class="colorred">内存</a>
+                                <a href="javascript:;">机箱</a>
+                                <a href="javascript:;">电源</a>
+                                <a href="javascript:;">显示器</a>
+                                <a href="javascript:;" class="colorred">散热器</a>
+                            </dd>
+
+                        </dl>
+                        <dl>
+                            <dt>电脑爱外设</dt>
+                            <dd>
+                                <a href="javascript:;" >键盘</a>
+
+                                <a href="javascript:;">鼠标</a>
+
+                                <a href="javascript:;">U盘</a>
+                                <a href="javascript:;">移动硬盘</a>
+                                <a href="javascript:;" class="colorred">存储卡</a>
+                                <a href="javascript:;">读卡器</a>
+                                <a href="javascript:;">手板绘</a>
+                                <a href="javascript:;">创作</a>
+                                <a href="javascript:;">附件</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>网络设备</dt>
+                            <dd>
+                                <a href="javascript:;" >路由器</a>
+                                <a href="javascript:;">网卡</a>
+                                <a href="javascript:;">交换机</a>
+                                <a href="javascript:;" class="colorred">网络配件</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>音频设备</dt>
+                            <dd>
+                                <a href="javascript:;" >耳麦</a>
+                                <a href="javascript:;">音响</a>
+                                <a href="javascript:;">声卡</a>
+                                <a href="javascript:;">音响</a>
+                                <a href="javascript:;">蓝牙耳机</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>打印耗材</dt>
+                            <dd>
+                                <a href="javascript:;" class="colorred">磨合</a>
+                                <a href="javascript:;">墨粉</a>
+
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>智能穿戴</dt>
+                            <dd>
+                                <a href="javascript:;" >智能穿戴设备</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>游戏外设</dt>
+                            <dd>
+                                <a href="javascript:;" >游戏机</a>
+                                <a href="javascript:;">游戏手并</a>
+                                <a href="javascript:;">手机配件</a>
+                                <a href="javascript:;"class="colorred">游戏周边</a>
+                                <a href="javascript:;">智能VR眼睛</a>
+                            </dd>
+                        </dl>
+
+                        <div class="content-right">
+                            <strong>热门品牌</strong>
+                            <p>
+                                <a  class="strong-1" href="javascript:;"></a>
+                                <a class="strong-2" href="javascript:;"></a>
+                                <a class="strong-3" href="javascript:;"></a>
+                                <a class="strong-4" href="javascript:;"></a>
+                                <a class="strong-5" href="javascript:;"></a>
+                                <a class="strong-6" href="javascript:;"></a>
+                            </p>
+                        </div>
+                        </dd>
+                    </li>
+                    <li >
+                        <dl>
+                            <dt>
+                            <div class="title  item4"><a href="javaascript:;">生活百货</a> <span></span></div>
+                            <div class="title-content">
+                                <p style="height:20px; line-height:20px"><a href="javscript:;"> 汽车用品</a> <a href="javascript:;">个人清洁</a></p>
+                                <p style="height:20px; line-height:20px">  <a href="javascript:;">钟表</a><a href="javascript:;" class="colorred">男装</a> <a href="javascript:;">女装</a> <a href="javascript:;">内衣</a></p>
+                                <p style="height:20px; line-height:20px"><a href="javascript:;" class="colorred">珠宝</a> <a href="javascript:;">母婴</a> <a href="javascript:;">玩具</a><a href="javascript:;">礼品</a> </p>
+                                <p style="height:20px; line-height:20px"><a href="javascript:;">家具</a><a href="javascript:;">厨用</a><a href="javascript:;">食品</a><a href="javascript:;" class="colorred">玩具</a></p>
+                                <p style="height:20px; line-height:20px"><a href="javascript:;">家具</a><a href="javascript:;">厨用</a><a href="javascript:;">食品</a><a href="javascript:;" class="colorred">玩具</a></p>
+
+
+                            </div>
+                            </dt>
+                        </dl>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="navmiddle">
+            <li><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">限时抢购</a></li>
+            <li><a href="javascript:;">团团购</a></li>
+            <li><a href="javascript:;">海外直购</a></li>
+            <li><a href="javascript:;">爱配车</a></li>
+            <li><a href="javascript:;">二车宝库</a></li>
+        </ul>
+        <div id="nav-left">
+            <ul class="car1">
+                <li class="men-0">购物车0件
+                    <div class="car-pp " >你还没有购买商品，赶快挑选吧!</div>
+                </li>
+                <li class="men-2">收藏提醒
+                    <div class="car-mm">请登录后查看<a>登录</a></div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="crumb" class="crumb_1213">
+    <div class="wraper">
+        <div class="inner">
+            <a href="javascript:;">首页</a>
+            <span> > </span><a href="javascript:;">家用电器</a><span> &gt; </span><a title="多用途电锅" href="http://www.newegg.cn/SubCategory/998.htm">多用途电锅</a><span> &gt; </span><a title="Bear 小熊" href="http://www.newegg.cn/Search.aspx?enid=400000998&amp;N=800001389">Bear 小熊</a><span> &gt; </span><strong>产品编号: A31-157-55J</strong>
+        </div>
+        <div id="compareArea" class="crumb-goods">
+            <span class="fl cl767">可以对比5个商品</span>
+            <dl id="compareBar">
+                <dt><a href="javascript:;">马上对比</a></dt>
+                <dd></dd><dd></dd><dd></dd><dd></dd><dd></dd>
+            </dl>
+        </div></div>
+</div>
+<div id="fixed">
+    <ul class="fixed-top">
+        <li class="active fixed-command"><a  class="A-color" href="javascript:;">商品详情</a></li>
+        <li><a class="A-color" href="javascript:;">用户评论</a></li>
+        <li><a class="A-color" href="javascript:;">具体参数</a></li>
+        <li><a class="A-color" href="javascript:;">售后服务</a></li>
+        <li><a class="A-color" href="javascript:;">商品咨询</a></li>
+        <p class="checkbox"> <input type="checkbox"><span>将商品加入对比</span></p>
+        <p class="car"><a href="car.html">查看购物车</a></p>
+    </ul>
+</div>
+<div id="materials">
+    <div id="materials-content">
+        <div class="goods-right">
+            <div class="bigImg">
+                <ul>
+                    <li class="active"><a href="javascript:;"><img src="../image/big-img-1.jpg" alt=""></a></li>
+                    <li><a href="javascript:;"><img class="img2" src="../image/big-img-2.jpg" alt=""></a></li>
+                    <li><a href="javascript:;"><img  class="img2" src="../image/big-img-3.jpg" alt=""></a></li>
+                    <li><a href="javascript:;"><img  class="img2" src="../image/big-img-4.jpg" alt=""></a></li>
+                    <li><a href="javascript:;"><img  class="img2" src="../image/big-img-5.jpg" alt=""></a></li>
+                </ul>
+                <div class="move"></div>
+            </div>
+            <div class="fangda">
+                <img  src="../image/big-img-1.jpg" alt="">
+                <img src="../image/big-img-2.jpg" alt="">
+                <img src="../image/big-img-3.jpg" alt="">
+                <img src="../image/big-img-4.jpg" alt="">
+                <img src="../image/big-img-5.jpg" alt="">
+            </div>
+
+            <div class="smallImg">
+                <ul>
+                    <li class="active"><a href="javascript:;"><img class="inn-img" src="../image/small-img-1.jpg" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="../image/small-img-2.jpg" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="../image/small-img-3.jpg" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="../image/small-img-4.jpg" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="../image/small-img-5.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="good-details">
+           <div class="good-width">
+            <div class="goods_title" id="productTitle">
+                <h1>Bear 小熊 DDZ-118TA 营养隔水电炖盅 一锅三胆 1.8L</h1>
+                <p>蒸煮更健康 口感更细腻</p>
+            </div>
+            <div class="goods_info">
+                <ul>
+                    <li>
+                        <div class="goods-info-name">品　　牌：</div>
+                        <div class="godds_info_data">
+                            <a href="javasacript:;" title="Bear 小熊" target="_blank">Bear 小熊</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="goods-info-name">产品型号：</div>
+                        <div class="godds_info_data">DDZ-118TA</div>
+                    </li>
+                    <li class="goods_price_now">
+                        <div class="goods-info-name" id="pricecontent">新　蛋　价：</div>
+                        <div class="godds_info_data">
+                            <span id="priceValue">
+	                	    <span class="clf76"><em>¥&nbsp;</em><strong class="fs30"><img src="../image/PriceImage-149.png"></strong></span>
+                            </span>
+                        </div>
+                        <input type="hidden" id="Price" value="149.00">
+                        <input type="hidden" id="hiddenCashRebate" value="0.00">
+                    </li>
+                    <li class="goods_info_choose goods_info_support">
+                        <div class="goods-info-name">商品支持：</div>
+                        <div class="godds_info_data">
+                            <a href="javascript:void(0)" class="goods_info_promise_logo promise_seven_day_off" title="不支持7天无理由退换货">不支持无理由退</a>
+                        </div>
+                    </li>
+                    <li class="goods_info_cnts" id="buyQty">
+                        <div class="goods-info-name">数　　量：</div>
+                        <div class="godds_info_data">
+                            <a class="plus_minus minus" href="javascript:void(0);" >-</a>
+                            <input class="num" type="text" value="1" maxlength="3" autocomplete="off">
+                            <a class="plus_minus plus" href="javascript:void(0);">+</a>
+                            <span class="godds_cnts_tips"></span>
+                            <span id="accept" style="color:green">　库存：接受预定(需2－3个工作日备货)</span>
+
+                        </div>
+                    </li>
+
+                    <li class="goods_info_answer" id="productTips" style="display: none;">
+                        <div class="goods-info-name"></div>
+                        <div class="godds_info_data">已选择 “<strong></strong><strong></strong>”</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="goods-btns " id="operations">
+                <a  class="common-add-btn  btn_mrg"  href="javascript:;">立即购买</a>
+                <a  class="common-add-btn btn_car "  href="javascript:;">加入购物车</a>
+                <div class="pop-title ie6png" style="display:none">
+                    <p>商品已经成功加入购物车   <span class="title-span">×</span></p>
+                    <a class="egg-t2 egg_btns_org" href="javascript:void(0);" id="areturn">继续购物</a>
+                    <a class="egg-t2 egg_btns_org-2" href="javascript:void(0);" >去结算</a>
+                </div>
+                <div class="goods-other">
+                   <div class="gray " ><a href="javascript:;">加入收藏夹</a></div>
+                    <div class="gray_btn fav "    >
+                        <div >
+                            <div class="fav_num"><p>1</p><p>0</p></div>
+                        </div>
+                    </div>
+                    <div class="car-logo">
+                        <a href="javascript:;" class="car1"></a>
+                        <a href="javascript:;"  class="car2"></a>
+                        <a href="javascript:;"  class="car3"></a>
+                        <a href="javascript:;"  class="car4"></a>
+                    </div>
+                </div>
+
+            </div>
+           </div>
+            <div class="goods-last">
+                 <p class="goods-title"><a href="javascript:;" >降价通知</a></p>
+                <div class="last-info"><b>0.0</b><a class= "profile-1" href="javascript:;"></a><a class="profile" href="javascript:;">暂无评论</a></div>
+                <div class="last-img">
+                    <div class="edcode"><img src="../image/edcode.png" alt=""></div>
+                    <div class="big-edcode" ><img src="../image/big-ercode.png" alt=""></div>
+                    <p><a href="javascript:;">用手机观看</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="decoration">
+    <div id="deco">
+        <div class="title"><p> Bear 小熊 DDZ-125TA 微电脑防烫隔水电炖盅炖锅 一锅四胆 2.5L</p></div>
+        <div>
+            <img src="../image/detaiils-decoration-1.jpg" alt="">
+            <img src="../image/detaiils-decoration-2.jpg" alt="">
+            <img src="../image/detaiils-decoration-3.jpg" alt="">
+            <img src="../image/detaiils-decoration-4.jpg" alt="">
+            <img src="../image/detaiils-decoration-5.jpg" alt="">
+            <img src="../image/detaiils-decoration-6.jpg" alt="">
+
+
+        </div>
+
+    </div>
+
+</div>
+<div id="footer">
+    <div class="wrap">
+        <div class="helpCenter">
+            <dl>
+                <dt class="dt2">新手上路</dt>
+                <dd>
+                    <ul class="info">
+                        <li><a href="javascript:;">怎样支付</a></li>
+                        <li><a href="javascript:;">支付常见问题</a></li>
+                        <li><a href="javascript:;">免运费政策</a></li>
+                        <li><a href="javascript:;">发票须知</a></li>
+                        <li><a href="javascript:;">签收验货流程</a></li>
+                        <li><a href="javascript:;">商户评论</a></li>
+                        <li><a href="javascript:;">大件商品订购通知流程</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl >
+                <dt class="dt3">新手上路</dt>
+                <dd>
+                    <ul class="info">
+                        <li><a href="javascript:;">怎样支付</a></li>
+                        <li><a href="javascript:;">支付常见问题</a></li>
+                        <li><a href="javascript:;">免运费政策</a></li>
+                        <li><a href="javascript:;">发票须知</a></li>
+                        <li><a href="javascript:;">签收验货流程</a></li>
+                        <li><a href="javascript:;">商户评论</a></li>
+                        <li><a href="javascript:;">大件商品订购通知流程</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl >
+                <dt class="dt4">新手上路</dt>
+                <dd>
+                    <ul class="info">
+                        <li><a href="javascript:;">怎样支付</a></li>
+                        <li><a href="javascript:;">支付常见问题</a></li>
+                        <li><a href="javascript:;">免运费政策</a></li>
+                        <li><a href="javascript:;">发票须知</a></li>
+                        <li><a href="javascript:;">签收验货流程</a></li>
+                        <li><a href="javascript:;">商户评论</a></li>
+                        <li><a href="javascript:;">大件商品订购通知流程</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl >
+                <dt class="dt5">新手上路</dt>
+                <dd>
+                    <ul class="info">
+                        <li><a href="javascript:;">怎样支付</a></li>
+                        <li><a href="javascript:;">支付常见问题</a></li>
+                        <li><a href="javascript:;">免运费政策</a></li>
+                        <li><a href="javascript:;">发票须知</a></li>
+                        <li><a href="javascript:;">签收验货流程</a></li>
+                        <li><a href="javascript:;">商户评论</a></li>
+                        <li><a href="javascript:;">大件商品订购通知流程</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt class="dt6">新手上路</dt>
+                <dd>
+                    <ul class="info">
+                        <li><a href="javascript:;">怎样支付</a></li>
+                        <li><a href="javascript:;">支付常见问题</a></li>
+                        <li><a href="javascript:;">免运费政策</a></li>
+                        <li><a href="javascript:;">发票须知</a></li>
+                        <li><a href="javascript:;">签收验货流程</a></li>
+                        <li><a href="javascript:;">商户评论</a></li>
+                        <li><a href="javascript:;">大件商品订购通知流程</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        <div class="foot">
+            <p class="cont1">
+                <a class=" item1" href="javascript:;"></a>
+                <a class=" item2" href="javascript:;"></a>
+                <a class=" item3" href="javascript:;"></a>
+                <a class=" item4" href="javascript:;"></a>
+                <a class=" item5" href="javascript:;"></a>
+            </p>
+
+            <p class="cont2"><a href="javascript:;">新蛋集团网站：</a><a href="javascript:;">美国新蛋</a><a href="javascript:;">加拿大新蛋</a><a
+                    href="javascript:;">新蛋软件</a>
+            </p>
+            <p class="cont3"><a href="javascript:;">@ 2001-2016</a><a href="javascript:;">新蛋商贸（上海）有限公司</a><a href="javascript:;">版权所有</a><a
+                    href="javascript:;">沪ICP备：16033615</a></p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
